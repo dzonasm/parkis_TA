@@ -1,0 +1,7 @@
+{
+    "compilerOptions": {
+        "target":"ES2019",
+        "module": "CommonJs",
+      "types": ["node", "webdriverio/async", "@wdio/cucumber-framework", "expect-webdriverio"]
+    }
+  }
