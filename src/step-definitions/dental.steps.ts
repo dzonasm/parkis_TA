@@ -15,7 +15,8 @@ Then(/^the main Dental title and description should be correct$/, async () => {
 });
 
 Then(/^find your product button for Dental is working$/, async () => {
-  
+  await Page.validateDentalButtonFindYourProductElem();
+  await Page.validateDentalButtonFindYourProductTextElem();
 });
 
 Then(/^the title and description of What is Dental Insurance should be correct$/, async () => {
