@@ -14,3 +14,12 @@ Then(/^the main Dental title and description should be correct$/, async () => {
   await Page.validateDentalTitleImg();
 });
 
+Then(/^find your product button for Dental is working$/, async () => {
+  
+});
+
+Then(/^the title and description of What is Dental Insurance should be correct$/, async () => {
+  await Page.validateDentalOfferTitle();
+  await Page.validateDentalOfferrDescription();
+});
+

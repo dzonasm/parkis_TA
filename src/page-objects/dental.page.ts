@@ -22,7 +22,15 @@ export default class dental extends Page {
   get dentalDescriptionElem() {
     return getElement('.brighter-p-large');
   }
+  //
+  get dentalOfferTitleElem() {
+    return getElement('[ta-id="offering-product_353375929"]');
+  }
 
+  get dentalOfferDescriptionElem() {
+    return getElement('[ta-id="offering-product_558789510"]');
+  }
+  //
   async validateUrl() {
     await expectURL(urls.healthcareProducts.dental, true);
   }
@@ -38,4 +46,13 @@ export default class dental extends Page {
   async validateDentalTitleImg() {
     await expectToExist(this.dentalMainTitleImage);
   }
+  //
+  async validateDentalOfferTitle() {
+    await expectText(this.dentalOfferTitleElem, Data.dentalOfferTitle);
+  }
+
+  async validateDentalOfferrDescription() {
+    await expectText(this.dentalOfferDescriptionElem, Data.dentalOfferDescription);
+  }
+  
 }

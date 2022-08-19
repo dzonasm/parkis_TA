@@ -23,9 +23,9 @@
             "name": "",
             "result": {
               "status": "passed",
-              "duration": 4000000
+              "duration": 6000000
             },
-            "line": 20,
+            "line": 23,
             "match": {
               "location": "can not be determined with webdriver.io"
             },
@@ -42,9 +42,9 @@
             "name": "the user is on the Dental page",
             "result": {
               "status": "passed",
-              "duration": 8502000000
+              "duration": 7823000000
             },
-            "line": 4,
+            "line": 5,
             "match": {
               "location": "can not be determined with webdriver.io"
             },
@@ -61,9 +61,9 @@
             "name": "the Dental Insurance product page is opened",
             "result": {
               "status": "passed",
-              "duration": 9000000
+              "duration": 13000000
             },
-            "line": 5,
+            "line": 6,
             "match": {
               "location": "can not be determined with webdriver.io"
             },
@@ -80,9 +80,28 @@
             "name": "the main Dental title and description should be correct",
             "result": {
               "status": "passed",
-              "duration": 136000000
+              "duration": 162000000
             },
-            "line": 6,
+            "line": 7,
+            "match": {
+              "location": "can not be determined with webdriver.io"
+            },
+            "embeddings": [
+              {
+                "data": "PASSED",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "And",
+            "name": "the title and description of What is Dental Insurance should be correct",
+            "result": {
+              "status": "passed",
+              "duration": 145000000
+            },
+            "line": 8,
             "match": {
               "location": "can not be determined with webdriver.io"
             },
@@ -101,7 +120,7 @@
               "status": "passed",
               "duration": 1000000
             },
-            "line": 24,
+            "line": 28,
             "match": {
               "location": "can not be determined with webdriver.io"
             }
@@ -110,129 +129,6 @@
       }
     ],
     "id": "test-for-dental-page",
-    "metadata": {
-      "browser": {
-        "name": "chrome",
-        "version": "104.0.5112.102"
-      },
-      "device": "Device name not known",
-      "platform": {
-        "name": "windows",
-        "version": "Version not known"
-      }
-    }
-  },
-  {
-    "keyword": "Feature",
-    "type": "feature",
-    "description": "",
-    "line": 0,
-    "name": "Test for Vision page",
-    "uri": "Can not be determined",
-    "tags": [],
-    "elements": [
-      {
-        "keyword": "Scenario",
-        "type": "scenario",
-        "description": "",
-        "name": "Open Vision Insurance",
-        "tags": [],
-        "id": "test-for-vision-page;open-vision-insurance",
-        "line": 0,
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Before",
-            "name": "",
-            "result": {
-              "status": "passed",
-              "duration": 3000000
-            },
-            "line": 20,
-            "match": {
-              "location": "can not be determined with webdriver.io"
-            },
-            "embeddings": [
-              {
-                "data": "[Current Client] indigo",
-                "mime_type": "text/plain"
-              }
-            ]
-          },
-          {
-            "arguments": [],
-            "keyword": "Given",
-            "name": "the user is on the Vision page",
-            "result": {
-              "status": "passed",
-              "duration": 5235000000
-            },
-            "line": 4,
-            "match": {
-              "location": "can not be determined with webdriver.io"
-            },
-            "embeddings": [
-              {
-                "data": "PASSED",
-                "mime_type": "text/plain"
-              }
-            ]
-          },
-          {
-            "arguments": [],
-            "keyword": "When",
-            "name": "the Vision Insurance product page is opened",
-            "result": {
-              "status": "passed",
-              "duration": 14000000
-            },
-            "line": 5,
-            "match": {
-              "location": "can not be determined with webdriver.io"
-            },
-            "embeddings": [
-              {
-                "data": "PASSED",
-                "mime_type": "text/plain"
-              }
-            ]
-          },
-          {
-            "arguments": [],
-            "keyword": "Then",
-            "name": "the main Vision title and description should be correct",
-            "result": {
-              "status": "passed",
-              "duration": 136000000
-            },
-            "line": 6,
-            "match": {
-              "location": "can not be determined with webdriver.io"
-            },
-            "embeddings": [
-              {
-                "data": "PASSED",
-                "mime_type": "text/plain"
-              }
-            ]
-          },
-          {
-            "arguments": [],
-            "keyword": "After",
-            "name": "",
-            "result": {
-              "status": "passed",
-              "duration": 1000000
-            },
-            "line": 24,
-            "match": {
-              "location": "can not be determined with webdriver.io"
-            }
-          }
-        ]
-      }
-    ],
-    "id": "test-for-vision-page",
     "metadata": {
       "browser": {
         "name": "chrome",
