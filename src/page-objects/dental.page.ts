@@ -43,6 +43,10 @@ export default class dental extends Page {
     await expectURL(urls.healthcareProducts.dental, true);
   }
 
+  async validateWizardUrl() {
+    await expectURL(urls.quiz, true);
+  }
+
   async validateDentalTitle() {
     await expectText(this.dentalTitleElem, Data.dentalTitle);
   }
@@ -69,5 +73,9 @@ export default class dental extends Page {
   
   async validateDentalButtonFindYourProductTextElem() {
     await expectText(this.dentalButtonFindYourProductTextElem, Data.dentalButtonFindYourProductText);
+  }
+
+  async validateDentalButtonIsWorking() {
+    await clickElement(this.dentalButtonFindYourProductElem, true);
   }
 }
