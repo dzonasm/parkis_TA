@@ -1,7 +1,7 @@
 _id: req_9adbcdc2e4414d34a1b6764ed18a0171
 type: Request
 parentId: fld_a665c0b801374b37bf5806deccf64212
-modified: 1661153421758
+modified: 1661163077193
 created: 1660830820106
 url: http://localhost:3000/parking-reservations
 name: parking-reservation
@@ -12,7 +12,7 @@ body:
   text: |-
     {
     		"userId": "1234567890",
-    		"parkingPlaceId": "23",
+    		"parkingPlaceId": "24",
     		"date": "2022-08-22T07:28:27.924Z"
     }
 parameters: []
