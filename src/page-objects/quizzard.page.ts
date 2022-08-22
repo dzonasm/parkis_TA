@@ -15,6 +15,10 @@ export default class quizzard extends Page {
     return getElement('[ta-id="widget_718917881"]');
   }
 
+  get wizardBackBtnText() {
+    return getElement('[ta-id="widget_900165588"]');
+  }
+
   async validateUrl() {
     await expectURL(urls.quiz, true);
   }
@@ -24,10 +28,10 @@ export default class quizzard extends Page {
   } 
 
   async validateWizardBackBtnText() {
-    await expectText(this.wizardBackBtn, Data.wizardButtonText);
+    await expectText(this.wizardBackBtnText, Data.wizardButtonText);
   }
 
-  async validateWizardBackBtnIsWorking() {
+  async clickBackBtn() {
     await clickElement(this.wizardBackBtn, true);
   }
 }

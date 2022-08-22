@@ -4,7 +4,7 @@
     "type": "feature",
     "description": "",
     "line": 0,
-    "name": "Test for Dental page",
+    "name": "Test for Dental page [indigo]",
     "uri": "Can not be determined",
     "tags": [],
     "elements": [
@@ -23,9 +23,9 @@
             "name": "",
             "result": {
               "status": "passed",
-              "duration": 11000000
+              "duration": 6000000
             },
-            "line": 24,
+            "line": 37,
             "match": {
               "location": "can not be determined with webdriver.io"
             },
@@ -42,9 +42,9 @@
             "name": "the user is on the Dental page",
             "result": {
               "status": "passed",
-              "duration": 5601000000
+              "duration": 5957000000
             },
-            "line": 5,
+            "line": 10,
             "match": {
               "location": "can not be determined with webdriver.io"
             },
@@ -60,29 +60,180 @@
             "keyword": "When",
             "name": "the Dental Insurance product page is opened",
             "result": {
-              "status": "passed",
-              "duration": 22000000
+              "status": "skipped",
+              "duration": 0
             },
-            "line": 6,
+            "line": 11,
             "match": {
               "location": "can not be determined with webdriver.io"
-            },
-            "embeddings": [
-              {
-                "data": "PASSED",
-                "mime_type": "text/plain"
-              }
-            ]
+            }
           },
           {
             "arguments": [],
             "keyword": "Then",
             "name": "the main Dental title and description should be correct",
             "result": {
-              "status": "passed",
-              "duration": 310000000
+              "status": "pending",
+              "duration": 0
             },
-            "line": 7,
+            "line": 12,
+            "match": {
+              "location": "can not be determined with webdriver.io"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And",
+            "name": "the title and description of What is Dental Insurance should be correct",
+            "result": {
+              "status": "pending",
+              "duration": 0
+            },
+            "line": 13,
+            "match": {
+              "location": "can not be determined with webdriver.io"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And",
+            "name": "find your product button for Dental? is working",
+            "result": {
+              "status": "pending",
+              "duration": 0
+            },
+            "line": 14,
+            "match": {
+              "location": "can not be determined with webdriver.io"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given",
+            "name": "the user is on the Quizzard page",
+            "result": {
+              "status": "pending",
+              "duration": 0
+            },
+            "line": 15,
+            "match": {
+              "location": "can not be determined with webdriver.io"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When",
+            "name": "the Quizzard page is opened",
+            "result": {
+              "status": "pending",
+              "duration": 0
+            },
+            "line": 16,
+            "match": {
+              "location": "can not be determined with webdriver.io"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then",
+            "name": "find back button is working",
+            "result": {
+              "status": "pending",
+              "duration": 0
+            },
+            "line": 17,
+            "match": {
+              "location": "can not be determined with webdriver.io"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And",
+            "name": "the Dental Insurance product page is opened",
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            },
+            "line": 18,
+            "match": {
+              "location": "can not be determined with webdriver.io"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "After",
+            "name": "",
+            "result": {
+              "status": "passed",
+              "duration": 0
+            },
+            "line": 47,
+            "match": {
+              "location": "can not be determined with webdriver.io"
+            }
+          }
+        ]
+      }
+    ],
+    "id": "test-for-dental-page",
+    "metadata": {
+      "browser": {
+        "name": "chrome",
+        "version": "104.0.5112.102"
+      },
+      "device": "Device name not known",
+      "platform": {
+        "name": "windows",
+        "version": "Version not known"
+      }
+    }
+  },
+  {
+    "keyword": "Feature",
+    "type": "feature",
+    "description": "",
+    "line": 0,
+    "name": "Test for Dental page [indigo] (#1 retry)",
+    "uri": "Can not be determined",
+    "tags": [],
+    "elements": [
+      {
+        "keyword": "Scenario",
+        "type": "scenario",
+        "description": "",
+        "name": "Open Dental Insurance",
+        "tags": [],
+        "id": "test-for-dental-page;open-dental-insurance",
+        "line": 0,
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Before",
+            "name": "",
+            "result": {
+              "status": "passed",
+              "duration": 4000000
+            },
+            "line": 37,
+            "match": {
+              "location": "can not be determined with webdriver.io"
+            },
+            "embeddings": [
+              {
+                "data": "[Current Client] indigo",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "Given",
+            "name": "the user is on the Dental page",
+            "result": {
+              "status": "passed",
+              "duration": 4714000000
+            },
+            "line": 10,
             "match": {
               "location": "can not be determined with webdriver.io"
             },
@@ -95,22 +246,107 @@
           },
           {
             "arguments": [],
+            "keyword": "When",
+            "name": "the Dental Insurance product page is opened",
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            },
+            "line": 11,
+            "match": {
+              "location": "can not be determined with webdriver.io"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then",
+            "name": "the main Dental title and description should be correct",
+            "result": {
+              "status": "pending",
+              "duration": 0
+            },
+            "line": 12,
+            "match": {
+              "location": "can not be determined with webdriver.io"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And",
+            "name": "the title and description of What is Dental Insurance should be correct",
+            "result": {
+              "status": "pending",
+              "duration": 0
+            },
+            "line": 13,
+            "match": {
+              "location": "can not be determined with webdriver.io"
+            }
+          },
+          {
+            "arguments": [],
             "keyword": "And",
             "name": "find your product button for Dental? is working",
             "result": {
-              "status": "passed",
-              "duration": 1994000000
+              "status": "pending",
+              "duration": 0
             },
-            "line": 8,
+            "line": 14,
             "match": {
               "location": "can not be determined with webdriver.io"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given",
+            "name": "the user is on the Quizzard page",
+            "result": {
+              "status": "pending",
+              "duration": 0
             },
-            "embeddings": [
-              {
-                "data": "PASSED",
-                "mime_type": "text/plain"
-              }
-            ]
+            "line": 15,
+            "match": {
+              "location": "can not be determined with webdriver.io"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When",
+            "name": "the Quizzard page is opened",
+            "result": {
+              "status": "pending",
+              "duration": 0
+            },
+            "line": 16,
+            "match": {
+              "location": "can not be determined with webdriver.io"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then",
+            "name": "find back button is working",
+            "result": {
+              "status": "pending",
+              "duration": 0
+            },
+            "line": 17,
+            "match": {
+              "location": "can not be determined with webdriver.io"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And",
+            "name": "the Dental Insurance product page is opened",
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            },
+            "line": 18,
+            "match": {
+              "location": "can not be determined with webdriver.io"
+            }
           },
           {
             "arguments": [],
@@ -120,7 +356,7 @@
               "status": "passed",
               "duration": 1000000
             },
-            "line": 29,
+            "line": 47,
             "match": {
               "location": "can not be determined with webdriver.io"
             }
