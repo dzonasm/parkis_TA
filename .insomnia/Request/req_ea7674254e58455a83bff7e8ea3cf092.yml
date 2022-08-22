@@ -1,0 +1,31 @@
+_id: req_ea7674254e58455a83bff7e8ea3cf092
+type: Request
+parentId: fld_a665c0b801374b37bf5806deccf64212
+modified: 1661153422131
+created: 1660831636493
+url: http://localhost:3000/parking-reservations/1234567890
+name: parking-reservation
+description: ""
+method: PUT
+body:
+  mimeType: application/json
+  text: |-
+    {
+    		"userId": "1234567890",
+    		"parkingPlaceId": "24",
+    		"date": "2022-08-22T07:28:27.924Z"
+    	}
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_9587221ad01a4f9ba6f022b894eb8473
+authentication: {}
+metaSortKey: -1661153260583
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global
