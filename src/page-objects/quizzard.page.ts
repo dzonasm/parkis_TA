@@ -19,6 +19,10 @@ export default class quizzard extends Page {
     return getElement('[ta-id="widget_900165588"]');
   }
 
+  get wizardCardTitleElem() {
+    return getElement('.brand-typography-display-h6');
+  }
+
   async validateUrl() {
     await expectURL(urls.quiz, true);
   }
@@ -33,5 +37,9 @@ export default class quizzard extends Page {
 
   async clickBackBtn() {
     await clickElement(this.wizardBackBtn, true);
+  }
+
+  async validateWizarCardTitle() {
+    await expectText(this.wizardCardTitleElem, Data.wizardCardTitle);
   }
 }
