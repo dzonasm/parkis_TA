@@ -11,27 +11,36 @@ export default class quizzard extends Page {
     return super.open(urls.quiz);
   }
 
-  get wizardBackBtn() {
+  get quizzardFirstQuestionHeaderText() {
+    return getElement('mercer-text-widget > div > h6');
+  }
+
+  get quizzardBackButton() {
     return getElement('[ta-id="widget_718917881"]');
   }
 
-  get wizardBackBtnText() {
+  get quizzardBackButtonText() {
     return getElement('[ta-id="widget_900165588"]');
   }
 
   async validateUrl() {
-    await expectURL(urls.quiz, true);
+    //await expectURL(urls.base.stage + urls.clients.indigo + urls.quiz, true);
+    await expectURL(urls.quiz);
   }
 
-  async validateWizardBackBtn() {
-    await expectToExist(this.wizardBackBtn);
+  async validateQuizzardFirstQuestionHeaderText() {
+    await expectText(this.quizzardFirstQuestionHeaderText, Data.quizzardFirstQuestionHeaderText);
+  }
+
+  async validateQuizzardBackButton() {
+    await expectToExist(this.quizzardBackButton);
   } 
 
-  async validateWizardBackBtnText() {
-    await expectText(this.wizardBackBtnText, Data.wizardButtonText);
+  async validateQuizzardBackButtonText() {
+    await expectText(this.quizzardBackButtonText, Data.quizzardButtonText);
   }
 
-  async clickBackBtn() {
-    await clickElement(this.wizardBackBtn, true);
+  async clickBackButton() {
+    await clickElement(this.quizzardBackButton, true);
   }
 }

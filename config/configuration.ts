@@ -15,7 +15,7 @@ const browserArguments = [
 ];
 
 if (LaunchHeadlessMode) {
-  // browserArguments.push('--headless');
+  browserArguments.push('--headless');
 }
 
 // Docs: https://webdriver.io/docs/options | https://webdriver.io/docs/configurationfile/

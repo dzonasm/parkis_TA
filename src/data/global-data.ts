@@ -29,6 +29,7 @@ export const ContextPages = {
 
   Dental: ['dental'],
   Vision: ['vision'],
+  Healthcare: ['healthcare'],
 
   /* Quizzards */
   Quizzard: ['quizzard'],
