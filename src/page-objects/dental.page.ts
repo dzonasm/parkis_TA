@@ -1,7 +1,7 @@
 import { Data } from '../data/dental.data';
 import urls from '../data/urls';
 import { expectText, expectToExist, expectURL } from '../helpers/validators';
-import { clickElement, getElement } from '../helpers/elements';
+import { clickElement, getElement, getNthElement } from '../helpers/elements';
 
 import { Page } from './page';
 
@@ -22,7 +22,7 @@ export default class dental extends Page {
   get dentalDescriptionElem() {
     return getElement('.brighter-p-large');
   }
-  //
+  
   get dentalOfferTitleElem() {
     return getElement('[ta-id="offering-product_353375929"]');
   }
@@ -38,7 +38,24 @@ export default class dental extends Page {
   get dentalButtonFindYourProductTextElem() {
     return getElement('[ta-id="offering-header_393197785"]');
   }
-  //
+
+  get dentalOfferingsLinkElem() {
+    return getElement('mercer-breadcrumb-nav > div > div:nth-child(1) > span > a');
+  }
+
+  //And who typically needs it most? title, pictures and descriptions for Dental should be displayed
+  get dentalFamiliesTitleElem() {
+    return getElement('[ta-id="offering-product_760549029"]');
+  }
+
+  get dentalFamiliesDescriptionElem() {
+    return getElement('[ta-id="offering-product_540480608"]');
+  }
+
+  get dentalFamiliesTitleImage() {
+    return getNthElement('[ta-id="offering-product_896582148"] brighter-icon > svg > use', 0);
+  }
+  
   async validateUrl() {
     await expectURL(urls.healthcareProducts.dental, true);
   }
@@ -58,13 +75,14 @@ export default class dental extends Page {
   async validateDentalTitleImg() {
     await expectToExist(this.dentalMainTitleImage);
   }
-  //
+  
   async validateDentalOfferTitle() {
     await expectText(this.dentalOfferTitleElem, Data.dentalOfferTitle);
   }
 
   async validateDentalOfferrDescription() {
     await expectText(this.dentalOfferDescriptionElem, Data.dentalOfferDescription);
+    await console.log(this.dentalOfferDescriptionElem);
   }
 
   async validateDentalButtonFindYourProductElem() {
@@ -78,4 +96,26 @@ export default class dental extends Page {
   async validateDentalButtonIsWorking() {
     await clickElement(this.dentalButtonFindYourProductElem, true);
   }
+
+  //And who typically needs it most? title, pictures and descriptions for Dental should be displayed
+  async validateDentalFamiliesTitle() {
+    await expectText(this.dentalFamiliesTitleElem, Data.dentalFamiliesTitle);
+  }
+
+  async validateDentalFamiliesDescription() {
+    await expectText(this.dentalFamiliesDescriptionElem, Data.dentalFamiliesDescription);
+  }
+
+  async validateDentalFamiliesTitleImg() {
+    await expectToExist(this.dentalFamiliesTitleImage);
+  }
+
+  async validateDentalOfferingsLinkElem() {
+    await expectText(this.dentalOfferingsLinkElem, Data.dentalOfferingsLinkText);
+  }
+
+  async validateDentalOfferingsLinkIsWorking() {
+    await clickElement(this.dentalOfferingsLinkElem, true);
+  }
+
 }
