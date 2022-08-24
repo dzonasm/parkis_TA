@@ -33,4 +33,7 @@ export const ContextPages = {
   /* Quizzards */
   Quizzard: ['quizzard'],
   GenericQuiz: ['generic'],
+
+  /* Offerings */
+  Offerings: ['offerings'],
 };

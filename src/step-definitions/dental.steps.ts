@@ -2,9 +2,11 @@ import { Then, When } from '@cucumber/cucumber';
 import { Context } from '../helpers/context';
 import Dental from '../page-objects/dental.page';
 import Quizzard from '../page-objects/quizzard.page';
+import Offerings from '../page-objects/offerings.page';
 
 const Page: Dental = Context.getInstance().getPage('Dental');
 const _Quizzard: Quizzard = Context.getInstance().getPage('Quizzard');
+const _Offerings: Offerings = Context.getInstance().getPage('Offerings');
 
 When(/^the Dental Insurance product page is opened$/, async () => {
   await Page.validateUrl();
@@ -51,11 +53,15 @@ Then(/^validate back button label and click it$/, async () => {
 
 Then(/^i can see in header Offerings and Healthcare links$/, async () => {
    await Page.validateDentalOfferingsLinkElem();
-  
 });
 
 Then(/^find Offerings link is working$/, async () => {
   await Page.validateDentalOfferingsLinkIsWorking();
+});
+
+Then(/^the offerings page is opened$/, async () => {
+  await _Offerings.validateOfferingsTitle();
+  await _Offerings.validateUrl();
 });
 
 
