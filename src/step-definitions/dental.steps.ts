@@ -41,8 +41,8 @@ Then(/^the Quizzard page is opened$/, async () => {
 });
 
 Then(/^validate back button label and click it$/, async () => {
-  await _Quizzard.validateWizardBackBtnText();
-  await _Quizzard.clickBackBtn();
+  await _Quizzard.validateQuizzardBackButtonText();
+  await _Quizzard.clickBackButton();
 });
 
 // Then(/^the Dental Insurance product page is opened$/, async () => {

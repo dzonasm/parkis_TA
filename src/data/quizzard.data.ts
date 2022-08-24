@@ -1,4 +1,4 @@
 export const Data = {
-    wizardButtonText: 'Back',
-    wizardCardTitle: 'What type of work do you do?'
+    quizzardButtonText: 'Back',
+    quizzardFirstQuestionHeaderText: 'What type of work do you do?'
   };
