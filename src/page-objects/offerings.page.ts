@@ -20,7 +20,11 @@ export default class offerings extends Page {
   }
 
   async validateOfferingsTitle() {
-    await expectText(this.offeringsTitleElem, Data.offeringsTitle);
+    await expectToExist(this.offeringsTitleElem);
   }
+
+  async validateOfferingsTitleText() {
+    await expectText(this.offeringsTitleElem, Data.offeringsTitleText);
+}
 
 }

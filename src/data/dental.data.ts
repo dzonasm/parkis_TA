@@ -6,5 +6,13 @@ export const Data = {
   dentalButtonFindYourProductText: 'Find your product',
   dentalFamiliesTitle: 'Families',
   dentalFamiliesDescription: 'Children greatly benefit from regular care and dental care is even required by some school systems. In addition, carrying a dental policy with orthodontics coverage can save money for many families.',
-  dentalOfferingsLinkText: "Offerings"
+  dentalOfferingsLinkText: "Offerings",
+  dentalHealtcareLinkText: "Healthcare",
+  dentalOlderPeopleTitle: "Older people",
+  dentalOlderPeopleDescription: "The older you are, the more likely you are to need extended dental services that can be high cost if paid out-of-pocket.",
+  dentalIssuesTitle: "Dental issues",
+  dentalIssuesDescription: "If you have experienced dental issues in the past, you may be more likely to need this type of coverage.",
+  dentalStartQuizlTitle: "Let us guide you to your perfect plan",
+  dentalStartQuizDescription: "Tell us about yourself to customize your plan.",
+  dentalButtonStartQuizText: "Get started"
 };

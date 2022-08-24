@@ -26,4 +26,5 @@ export default {
   },
   quiz: 'wizard',
   results: 'results/',
+  
 };
