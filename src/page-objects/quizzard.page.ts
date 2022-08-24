@@ -49,6 +49,6 @@ export default class quizzard extends Page {
   }
 
   async validateWizarCardTitle() {
-    await expectText(this.wizardCardTitleElem, Data.wizardCardTitle);
+    await expectText(this.wizardCardTitleElem, Data.quizzardFirstQuestionHeaderText);
   }
 }

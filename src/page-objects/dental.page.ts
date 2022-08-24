@@ -40,7 +40,7 @@ export default class dental extends Page {
   }
 
   get dentalOfferingsLinkElem() {
-    return getElement('mercer-breadcrumb-nav > div > div:nth-child(1) > span > a');
+    return getElement('mercer-breadcrumb-nav > div > div:nth-child(1) > span > a > span');
   }
 
   //And who typically needs it most? title, pictures and descriptions for Dental should be displayed

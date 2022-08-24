@@ -24,6 +24,6 @@ export default {
   quizLinks: {
     ACAHealth: 'wizard?productCode=HEALTH%20ACA%20EXCHANGE',
   },
-  quiz: 'wizard/',
+  quiz: 'wizard',
   results: 'results/',
 };
