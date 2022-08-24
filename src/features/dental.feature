@@ -17,6 +17,7 @@ Feature: Test for Dental page
     When the Dental Insurance product page is opened
     Then i can see in header Offerings and Healthcare links
     And find Offerings link is working
+    And the offerings page is opened
 
     
     
