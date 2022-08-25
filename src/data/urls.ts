@@ -25,5 +25,6 @@ export default {
     ACAHealth: 'wizard?productCode=HEALTH%20ACA%20EXCHANGE',
   },
   quiz: 'wizard/',
+  visionQuiz: 'wizard?productCode=VISION',
   results: 'results/',
 };

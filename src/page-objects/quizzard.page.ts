@@ -23,13 +23,12 @@ export default class quizzard extends Page {
     return getElement('[ta-id="widget_900165588"]');
   }
 
-  get wizardCardTitleElem() {
+  get quizzardCardTitleElem() {
     return getElement('.brand-typography-display-h6');
   }
 
-  async validateUrl() {
-    //await expectURL(urls.base.stage + urls.clients.indigo + urls.quiz, true);
-    await expectURL(urls.quiz);
+  async validateVisionUrl() {
+    await expectURL(urls.visionQuiz);
   }
 
   async validateQuizzardFirstQuestionHeaderText() {
@@ -48,7 +47,7 @@ export default class quizzard extends Page {
     await clickElement(this.quizzardBackButton, true);
   }
 
-  async validateWizarCardTitle() {
-    await expectText(this.wizardCardTitleElem, Data.wizardCardTitle);
+  async validateQuizzardCardTitle() {
+    await expectText(this.quizzardCardTitleElem, Data.quizzardFirstQuestionHeaderText);
   }
 }
