@@ -10,7 +10,6 @@ const _Quizzard: Quizzard = Context.getInstance().getPage('Quizzard');
 const _Offerings: Offerings = Context.getInstance().getPage('Offerings');
 const _Healthcare: Healthcare = Context.getInstance().getPage('Healthcare');
 
-// Scenario: Test Dental header
 When(/^the Dental Insurance product page is opened$/, async () => {
   await Page.validateUrl();
 });
@@ -18,12 +17,18 @@ When(/^the Dental Insurance product page is opened$/, async () => {
 Then(/^the Dental title and description should be correct$/, async () => {
   await Page.validateDentalTitle();
   await Page.validateDentalDescription();
-  await Page.validateDentalTitleImg();
+  await Page.validateDentalHeaderTitleImg();
+  await Page.validateHeaderTitleImgAtribute();
 });
 
-Then(/^i can see Offerings and Healthcare links$/, async () => {
+Then(/^user can see Offerings link$/, async () => {
    await Page.validateDentalOfferingsLinkText();
-   await Page.validateDentalHealtcareLinkText();
+   await Page.validateDentalOfferingsHrefAtribute();
+});
+
+Then(/^user can see Healthcare link$/, async () => {
+  await Page.validateDentalHealtcareLinkText();
+  await Page.validateDentalHealtcareHrefAtribute();
 });
 
 Then(/^find Offerings link is working$/, async () => {
@@ -52,7 +57,7 @@ Then(/^find your product button for Dental\? is working$/, async () => {
   await Page.validateDentalButtonIsWorking();
 });
 
-When(/^the Quizzard page is opened$/, async () => {
+Then(/^the Quizzard page is opened$/, async () => {
   await _Quizzard.validateWizarCardTitle();
   await _Quizzard.validateUrl();
 });
@@ -62,37 +67,50 @@ Then(/^validate back button label and click it$/, async () => {
   await _Quizzard.clickBackButton();
 });
 
-// Then(/^user should go back to Dental page$/, async () => {
-//   await Page.validateDentalTitle();
-//   await Page.validateUrl();
-// });
+Then(/^user should go back to Dental page$/, async () => {
+  await Page.validateDentalTitle();
+  await Page.validateUrl();
+});
 
-// Scenario: Test Dental main section
 Then(/^the title and description of What is Dental Insurance\? should be correct$/, async () => {
   await Page.validateDentalOfferTitle();
   await Page.validateDentalOfferrDescription();
 });
 
-Then(/^who typically needs it most\? title, pictures and descriptions for Dental should be displayed$/, async () => {
- await Page.validateDentalFamiliesTitle();
- await Page.validateDentalFamiliesDescription();
- await Page.validateDentalFamiliesTitleImg();
- await Page.validateOlderPeopleTitle();
- await Page.validateOlderPeopleDescription();
- await Page.validateOlderPeopleTitleImg();
- await Page.validateDentalIssuesTitle();
- await Page.validateDentalIssuesDescription();
- await Page.validateDentalIssuesTitleImg();
+Then(/^who typically needs it most\? title should be correct$/, async () => {
+  await Page.validateDentalMainSubTitleElem();
 });
 
-// Scenario: Test start quiz section
+
+
+Then(/^picture and description of offering for Families should be correct$/, async () => {
+  await Page.validateDentalFamiliesTitle();
+  await Page.validateDentalFamiliesDescription();
+  await Page.validateDentalFamiliesTitleImg();
+  await Page.validateDentalFamiliesTitleImgAtribute();
+});
+
+Then(/^picture and description of offering for Older people plan should be correct$/, async () => {
+  await Page.validateOlderPeopleTitle();
+  await Page.validateOlderPeopleDescription();
+  await Page.validateOlderPeopleTitleImg();
+  await Page.validateDentalOlderPeopleTitleImgAtribute();
+});
+
+Then(/picture and description of offering for Dental issues plan should be correct$/, async () => {
+  await Page.validateDentalIssuesTitle();
+  await Page.validateDentalIssuesDescription();
+  await Page.validateDentalIssuesTitleImg();
+  await Page.validateDentalIssuesTitleImgAtribute();
+});
+
 Then(/^the title and description of start quiz section should be correct$/, async () => {
   await Page.validateStartQuizTitleImg();
   await Page.validateStartQuizDescription();
   await Page.validateStartQuizlTitle();
 });
 
-Then(/^find get started button has correct text$/, async () => {
+Then(/^get started button text should be correct$/, async () => {
   await Page.validateDentalButtonStartQuizElem();
   await Page.validateDentalButtonStartQuizTextElem();
 });
@@ -106,66 +124,20 @@ Then(/^Quizzard page should be opened$/, async () => {
   await _Quizzard.validateUrl();
 });
 
+Then(/^the title and description of brighter card should be correct$/, async () => {
+  await Page.validateDentalBrighterCardTitleElem();
+  await Page.validateDentalBrighterCardDescriptionElem();
+  await Page.validateBrighterCardImage();
+});
 
+Then(/^the brighter card has icons$/, async () => {
+  await Page.validateBrighterCardImage();
+  await Page.validateBrighterCardIconAtribute();
+  await Page.validateBrighterCardVideoIcon();
+});
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// Then(/^the title and description of What is Dental Insurance\? should be correct$/, async () => {
-//   await Page.validateDentalOfferTitle();
-//   await Page.validateDentalOfferrDescription();
-// });
-
-// Then(/^who typically needs it most\? title, pictures and descriptions for Dental should be displayed$/, async () => {
-//  await Page.validateDentalFamiliesTitle();
-//  await Page.validateDentalFamiliesDescription();
-//  await Page.validateDentalFamiliesTitleImg();
-// });
-
-// // Scenario: Test Dental header
-// Then(/^i can see Offerings and Healthcare links$/, async () => {
-//    await Page.validateDentalOfferingsLinkElem();
-// });
-
-// When(/^find Offerings link is working$/, async () => {
-//   await Page.validateDentalOfferingsLinkIsWorking();
-// });
-
-// Then(/^the Offerings page is opened$/, async () => {
-//   await _Offerings.validateOfferingsTitle();
-//   await _Offerings.validateUrl();
-// });
-
-// // Scenario: Test product button
-// Then(/^find your product button for Dental\? is working$/, async () => {
-//   await Page.validateDentalButtonFindYourProductElem();
-//   await Page.validateDentalButtonFindYourProductTextElem();
-//   await Page.validateDentalButtonIsWorking();
-// });
-
-// Then(/^the Quizzard page is opened$/, async () => {
-//   await _Quizzard.validateWizarCardTitle();
-//   await _Quizzard.validateUrl();
-// });
-
-// Then(/^validate back button label and click it$/, async () => {
-//   await _Quizzard.validateQuizzardBackButtonText();
-//   await _Quizzard.clickBackButton();
-// });
-
-// // Then(/^the Dental Insurance product page is opened$/, async () => {
-// //   await Page.validateUrl();
-// // });
-
+Then(/^the brighter card has a picture$/, async () => {
+  await Page.validateBrighterCardImg();
+  await Page.validateBrighterCardImgAtribute();
+});
 

@@ -1,6 +1,6 @@
 import { Data } from '../data/dental.data';
 import urls from '../data/urls';
-import { expectText, expectToExist, expectURL } from '../helpers/validators';
+import { expectAttributeToContain, expectText, expectToExist, expectURL, expectValue } from '../helpers/validators';
 import { clickElement, getElement, getNthElement } from '../helpers/elements';
 
 import { Page } from './page';
@@ -11,7 +11,7 @@ export default class dental extends Page {
     return super.open(urls.healthcareProducts.dental);
   }
 
-  get dentalMainTitleImage() {
+  get dentalHeaderTitleImage() {
     return getElement('mercer-app-offering-header brighter-icon > svg > use');
   }
 
@@ -51,11 +51,18 @@ export default class dental extends Page {
     return getElement('mercer-breadcrumb-nav > div > div:nth-child(1) > span > a > span');
   }
 
+  get dentalOfferingsHref() {
+    return getElement('mercer-breadcrumb-nav > div > div:nth-child(1) > span > a');
+  }
+
+  get dentalHealtcareHref() {
+    return getElement('mercer-breadcrumb-nav > div > div:nth-child(2) > span > a');
+  }
+
   get dentalHealtcareLinkTextElem() {
     return getElement('mercer-breadcrumb-nav > div > div:nth-child(2) > span > a > span');
   }
 
-  //And who typically needs it most? title, pictures and descriptions for Dental should be displayed
   get dentalFamiliesTitleElem() {
     return getElement('[ta-id="offering-product_760549029"]');
   }
@@ -103,13 +110,57 @@ export default class dental extends Page {
   get dentalStartQuizDescriptionElem() {
     return getElement('[ta-id="start-quiz_171906089"]');
   }
+
+  get dentalBrighterCardTitleElem() {
+    return getElement('[ta-id="offering-product_608648035"]');
+  }
+
+  get dentalBrighterCardDescriptionElem() {
+    return getElement('[ta-id="sidebar_758035548"]');
+  }
+
+  get dentalBrighterCardIcon() {
+    return getElement('mercer-app-offerings-sidebar > div > brighter-icon > svg > use');
+  }
+
+  get dentalBrighterCardVideoIcon() {
+    return getElement('brighter-card-content > div.p-lead-flex.brighter-p-lead > brighter-icon > svg > use');
+  }
+
+  get dentalBrighterCardVideo() {
+    return getElement('[ta-id="sidebar_998391898"]');
+  }
+
+  get dentalMainSubTitleElem() {
+    return getElement('[ta-id="offering-product_342314838"]');
+  }
+
+  get dentalBrighterCardImg() {
+    return getElement('[ta-id="sidebar_909911467"]');
+  }
   
   async validateUrl() {
     await expectURL(urls.healthcareProducts.dental, true);
   }
 
-  async validateWizardUrl() {
-    await expectURL(urls.quiz, true);
+  async validateDentalFamiliesTitleImgAtribute() {
+    await expectAttributeToContain(this.dentalFamiliesTitleImage, "xlink:href", "/brighter-assets/icons/green_icons.svg#People-Green");
+  }
+
+  async validateDentalOlderPeopleTitleImgAtribute() {
+    await expectAttributeToContain(this.dentalOlderPeopleTitleImage, "xlink:href", "/brighter-assets/icons/green_icons.svg#Dragonfly-Green");
+  }
+
+  async validateDentalIssuesTitleImgAtribute() {
+    await expectAttributeToContain(this.dentalIssuesTitleImage, "xlink:href", "/brighter-assets/icons/green_icons.svg#Dental-Green");
+  }
+
+  async validateDentalOfferingsHrefAtribute() {
+    await expectAttributeToContain(this.dentalOfferingsHref, "href", "/client/indigo/offerings");
+  }
+
+  async validateDentalHealtcareHrefAtribute() {
+    await expectAttributeToContain(this.dentalHealtcareHref, "href", "/client/indigo/offerings/606d91a9cf72104f54e0ddd9");
   }
 
   async validateDentalTitle() {
@@ -120,8 +171,8 @@ export default class dental extends Page {
     await expectText(this.dentalDescriptionElem, Data.dentalDescription);
   }
 
-  async validateDentalTitleImg() {
-    await expectToExist(this.dentalMainTitleImage);
+  async validateDentalHeaderTitleImg() {
+    await expectToExist(this.dentalHeaderTitleImage);
   }
   
   async validateDentalOfferTitle() {
@@ -208,6 +259,10 @@ export default class dental extends Page {
     await expectToExist(this.dentalStartQuizTitleImage);
   }
 
+  async validateHeaderTitleImgAtribute() {
+    await expectAttributeToContain(this.dentalHeaderTitleImage, "xlink:href", "/brighter-assets/icons/green_icons.svg#Dental-Green");
+  }
+
   async validateDentalButtonStartQuizElem() {
     await expectToExist(this.dentalButtonStartQuizElem);
   }
@@ -218,5 +273,45 @@ export default class dental extends Page {
 
   async validateDentalButtonStartQuizIsWorking() {
     await clickElement(this.dentalButtonStartQuizElem, true);
+  }
+
+  async validateDentalBrighterCardTitleElem() {
+    await expectText(this.dentalBrighterCardTitleElem, Data.dentalBrighterCardTitle);
+  }
+
+  async validateDentalBrighterCardDescriptionElem() {
+    await expectText(this.dentalBrighterCardDescriptionElem, Data.dentalBrighterCardDescription);
+  }
+
+  async validateBrighterCardImage() {
+    await expectToExist(this.dentalBrighterCardIcon);
+  }
+
+  async validateBrighterCardVideoIcon() {
+    await expectToExist(this.dentalBrighterCardVideoIcon);
+  }
+
+  async validateBrighterCardIconAtribute() {
+    await expectAttributeToContain(this.dentalBrighterCardIcon, "xlink:href", "/brighter-assets/icons/green_icons.svg#Dental-Green");
+  }
+
+  async validateBrighterCardVideoIconAtribute() {
+    await expectAttributeToContain(this.dentalBrighterCardIcon, "xlink:href", "/brighter-assets/icons/green_icons.svg#Video-Green");
+  }
+
+  async clickDentalBrighterCardVideo() {
+    await clickElement(this.dentalBrighterCardVideo);
+  }
+
+  async validateDentalMainSubTitleElem() {
+    await expectText(this.dentalMainSubTitleElem, Data.dentalmainSubTitle);
+  }
+
+  async validateBrighterCardImg() {
+    await expectToExist(this.dentalBrighterCardImg);
+  }
+
+  async validateBrighterCardImgAtribute() {
+    await expectAttributeToContain(this.dentalBrighterCardImg, "src", "/assets/images/video/video_dental.jpg");
   }
 }

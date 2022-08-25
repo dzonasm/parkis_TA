@@ -14,5 +14,8 @@ export const Data = {
   dentalIssuesDescription: "If you have experienced dental issues in the past, you may be more likely to need this type of coverage.",
   dentalStartQuizlTitle: "Let us guide you to your perfect plan",
   dentalStartQuizDescription: "Tell us about yourself to customize your plan.",
-  dentalButtonStartQuizText: "Get started"
+  dentalButtonStartQuizText: "Get started",
+  dentalBrighterCardTitle: "Mercer Indigo Insights",
+  dentalBrighterCardDescription: 'Focus on prevention\n\n\n' + 'Keeping up on your dental visits can greatly reduce your need for major dental surgery as you age. Having a good dental plan that not only covers all of your preventive care - but can also handle those dental issues that will occasionally come up - will pay dividends in the long term and keep your mouth clean and healthy.',
+  dentalmainSubTitle: "Who typically needs it most?"
 };
