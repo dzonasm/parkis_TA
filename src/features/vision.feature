@@ -21,4 +21,3 @@
 #     When the Vision Insurance product page is opened
 #     And find your product button for Vision has correct text
 #     And find your product button for Vision is working
-#     Then the Quizzard page should be opened

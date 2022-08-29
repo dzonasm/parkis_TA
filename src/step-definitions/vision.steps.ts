@@ -49,9 +49,3 @@ When(/^find your product button for Vision has correct text$/, async () => {
 When(/^find your product button for Vision is working$/, async () => {
   await Page.clickFindYourProductButton();
 });
-
-Then(/^the Quizzard page should be opened$/, async () => {
-  await _Quizzard.validateQuizzardFirstQuestionHeaderText();
-  //how to build urls correct way :)))
-  //await _Quizzard.validateUrl();
-});
