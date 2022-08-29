@@ -23,7 +23,7 @@
             "name": "",
             "result": {
               "status": "passed",
-              "duration": 5000000
+              "duration": 4000000
             },
             "line": 116,
             "match": {
@@ -42,7 +42,7 @@
             "name": "the user is on the Dental page",
             "result": {
               "status": "passed",
-              "duration": 4907000000
+              "duration": 5754000000
             },
             "line": 37,
             "match": {
@@ -61,7 +61,7 @@
             "name": "the Dental Insurance product page is opened",
             "result": {
               "status": "passed",
-              "duration": 8000000
+              "duration": 9000000
             },
             "line": 38,
             "match": {
@@ -99,7 +99,7 @@
             "name": "user can see Offerings link",
             "result": {
               "status": "passed",
-              "duration": 66000000
+              "duration": 68000000
             },
             "line": 40,
             "match": {
@@ -118,7 +118,7 @@
             "name": "user can see Healthcare link",
             "result": {
               "status": "passed",
-              "duration": 65000000
+              "duration": 96000000
             },
             "line": 41,
             "match": {
@@ -137,7 +137,7 @@
             "name": "find Offerings link is working",
             "result": {
               "status": "passed",
-              "duration": 95000000
+              "duration": 97000000
             },
             "line": 42,
             "match": {
@@ -156,7 +156,7 @@
             "name": "the Offerings page is opened",
             "result": {
               "status": "passed",
-              "duration": 67000000
+              "duration": 66000000
             },
             "line": 43,
             "match": {
@@ -175,7 +175,7 @@
             "name": "the user is on the Dental page",
             "result": {
               "status": "passed",
-              "duration": 331000000
+              "duration": 349000000
             },
             "line": 44,
             "match": {
@@ -194,7 +194,7 @@
             "name": "find Healtcare link is working",
             "result": {
               "status": "passed",
-              "duration": 648000000
+              "duration": 603000000
             },
             "line": 45,
             "match": {
@@ -213,7 +213,7 @@
             "name": "the Healtcare page is opened",
             "result": {
               "status": "passed",
-              "duration": 582000000
+              "duration": 585000000
             },
             "line": 46,
             "match": {
@@ -232,7 +232,7 @@
             "name": "",
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 0
             },
             "line": 127,
             "match": {
@@ -275,7 +275,7 @@
             "name": "the user is on the Dental page",
             "result": {
               "status": "passed",
-              "duration": 328000000
+              "duration": 324000000
             },
             "line": 48,
             "match": {
@@ -313,7 +313,7 @@
             "name": "find your product button for Dental? is working",
             "result": {
               "status": "passed",
-              "duration": 645000000
+              "duration": 642000000
             },
             "line": 50,
             "match": {
@@ -332,7 +332,7 @@
             "name": "the user is on the Quizzard page",
             "result": {
               "status": "passed",
-              "duration": 431000000
+              "duration": 441000000
             },
             "line": 51,
             "match": {
@@ -351,7 +351,7 @@
             "name": "the Quizzard page is opened",
             "result": {
               "status": "passed",
-              "duration": 1074000000
+              "duration": 1076000000
             },
             "line": 52,
             "match": {
@@ -370,7 +370,7 @@
             "name": "validate back button label and click it",
             "result": {
               "status": "passed",
-              "duration": 661000000
+              "duration": 142000000
             },
             "line": 53,
             "match": {
@@ -389,7 +389,7 @@
             "name": "user should go back to Dental page",
             "result": {
               "status": "failed",
-              "duration": 25932000000,
+              "duration": 26018000000,
               "error_message": "Error: function timed out, ensure the promise resolves within 25000 milliseconds\n    at Timeout.<anonymous> (C:\\Users\\pauli\\Desktop\\indigo\\test3\\parkis_TA\\node_modules\\@cucumber\\cucumber\\src\\time.ts:53:14)\n    at listOnTimeout (node:internal/timers:559:17)\n    at processTimers (node:internal/timers:502:7)"
             },
             "line": 54,
@@ -438,9 +438,9 @@
         "keyword": "Scenario",
         "type": "scenario",
         "description": "",
-        "name": "Test Dental main section",
+        "name": "View Dental main section",
         "tags": [],
-        "id": "test-for-dental-page;test-dental-main-section",
+        "id": "test-for-dental-page;view-dental-main-section",
         "line": 0,
         "steps": [
           {
@@ -449,7 +449,7 @@
             "name": "",
             "result": {
               "status": "passed",
-              "duration": 2000000
+              "duration": 1000000
             },
             "line": 139,
             "match": {
@@ -468,7 +468,7 @@
             "name": "the user is on the Dental page",
             "result": {
               "status": "passed",
-              "duration": 269000000
+              "duration": 284000000
             },
             "line": 56,
             "match": {
@@ -487,7 +487,7 @@
             "name": "the title and description of What is Dental Insurance? should be correct",
             "result": {
               "status": "passed",
-              "duration": 617000000
+              "duration": 618000000
             },
             "line": 57,
             "match": {
@@ -506,7 +506,7 @@
             "name": "who typically needs it most? title should be correct",
             "result": {
               "status": "passed",
-              "duration": 36000000
+              "duration": 41000000
             },
             "line": 58,
             "match": {
@@ -525,7 +525,7 @@
             "name": "picture and description of offering for Families should be correct",
             "result": {
               "status": "passed",
-              "duration": 119000000
+              "duration": 135000000
             },
             "line": 59,
             "match": {
@@ -544,7 +544,7 @@
             "name": "picture and description of offering for Older people plan should be correct",
             "result": {
               "status": "passed",
-              "duration": 140000000
+              "duration": 109000000
             },
             "line": 60,
             "match": {
@@ -563,7 +563,7 @@
             "name": "picture and description of offering for Dental issues plan should be correct",
             "result": {
               "status": "passed",
-              "duration": 104000000
+              "duration": 110000000
             },
             "line": 61,
             "match": {
@@ -625,7 +625,7 @@
             "name": "the user is on the Dental page",
             "result": {
               "status": "passed",
-              "duration": 457000000
+              "duration": 426000000
             },
             "line": 63,
             "match": {
@@ -644,7 +644,7 @@
             "name": "the title and description of start quiz section should be correct",
             "result": {
               "status": "passed",
-              "duration": 610000000
+              "duration": 605000000
             },
             "line": 64,
             "match": {
@@ -663,7 +663,7 @@
             "name": "get started button text should be correct",
             "result": {
               "status": "passed",
-              "duration": 67000000
+              "duration": 72000000
             },
             "line": 65,
             "match": {
@@ -682,7 +682,7 @@
             "name": "find get started button is working",
             "result": {
               "status": "passed",
-              "duration": 76000000
+              "duration": 77000000
             },
             "line": 66,
             "match": {
@@ -701,7 +701,7 @@
             "name": "Quizzard page should be opened",
             "result": {
               "status": "passed",
-              "duration": 629000000
+              "duration": 574000000
             },
             "line": 67,
             "match": {
@@ -720,7 +720,7 @@
             "name": "",
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 0
             },
             "line": 154,
             "match": {
@@ -763,7 +763,7 @@
             "name": "the user is on the Dental page",
             "result": {
               "status": "passed",
-              "duration": 333000000
+              "duration": 422000000
             },
             "line": 69,
             "match": {
@@ -782,7 +782,7 @@
             "name": "the title and description of brighter card should be correct",
             "result": {
               "status": "passed",
-              "duration": 622000000
+              "duration": 589000000
             },
             "line": 70,
             "match": {
@@ -801,7 +801,7 @@
             "name": "the brighter card has icons",
             "result": {
               "status": "passed",
-              "duration": 78000000
+              "duration": 103000000
             },
             "line": 71,
             "match": {
@@ -820,7 +820,7 @@
             "name": "the brighter card has a picture",
             "result": {
               "status": "passed",
-              "duration": 49000000
+              "duration": 65000000
             },
             "line": 72,
             "match": {
@@ -905,7 +905,7 @@
             "name": "the user is on the Dental page",
             "result": {
               "status": "passed",
-              "duration": 4787000000
+              "duration": 5265000000
             },
             "line": 37,
             "match": {
@@ -924,7 +924,7 @@
             "name": "the Dental Insurance product page is opened",
             "result": {
               "status": "passed",
-              "duration": 9000000
+              "duration": 13000000
             },
             "line": 38,
             "match": {
@@ -943,7 +943,7 @@
             "name": "the Dental title and description should be correct",
             "result": {
               "status": "passed",
-              "duration": 167000000
+              "duration": 148000000
             },
             "line": 39,
             "match": {
@@ -962,7 +962,7 @@
             "name": "user can see Offerings link",
             "result": {
               "status": "passed",
-              "duration": 68000000
+              "duration": 77000000
             },
             "line": 40,
             "match": {
@@ -981,7 +981,7 @@
             "name": "user can see Healthcare link",
             "result": {
               "status": "passed",
-              "duration": 90000000
+              "duration": 64000000
             },
             "line": 41,
             "match": {
@@ -1000,7 +1000,7 @@
             "name": "find Offerings link is working",
             "result": {
               "status": "passed",
-              "duration": 99000000
+              "duration": 103000000
             },
             "line": 42,
             "match": {
@@ -1019,7 +1019,7 @@
             "name": "the Offerings page is opened",
             "result": {
               "status": "passed",
-              "duration": 79000000
+              "duration": 74000000
             },
             "line": 43,
             "match": {
@@ -1038,7 +1038,7 @@
             "name": "the user is on the Dental page",
             "result": {
               "status": "passed",
-              "duration": 346000000
+              "duration": 342000000
             },
             "line": 44,
             "match": {
@@ -1057,7 +1057,7 @@
             "name": "find Healtcare link is working",
             "result": {
               "status": "passed",
-              "duration": 627000000
+              "duration": 639000000
             },
             "line": 45,
             "match": {
@@ -1076,7 +1076,7 @@
             "name": "the Healtcare page is opened",
             "result": {
               "status": "passed",
-              "duration": 598000000
+              "duration": 588000000
             },
             "line": 46,
             "match": {
@@ -1095,7 +1095,7 @@
             "name": "",
             "result": {
               "status": "passed",
-              "duration": 0
+              "duration": 1000000
             },
             "line": 127,
             "match": {
@@ -1138,7 +1138,7 @@
             "name": "the user is on the Dental page",
             "result": {
               "status": "passed",
-              "duration": 308000000
+              "duration": 316000000
             },
             "line": 48,
             "match": {
@@ -1176,7 +1176,7 @@
             "name": "find your product button for Dental? is working",
             "result": {
               "status": "passed",
-              "duration": 639000000
+              "duration": 633000000
             },
             "line": 50,
             "match": {
@@ -1195,7 +1195,7 @@
             "name": "the user is on the Quizzard page",
             "result": {
               "status": "passed",
-              "duration": 398000000
+              "duration": 417000000
             },
             "line": 51,
             "match": {
@@ -1214,7 +1214,7 @@
             "name": "the Quizzard page is opened",
             "result": {
               "status": "passed",
-              "duration": 1068000000
+              "duration": 1095000000
             },
             "line": 52,
             "match": {
@@ -1233,7 +1233,7 @@
             "name": "validate back button label and click it",
             "result": {
               "status": "passed",
-              "duration": 642000000
+              "duration": 655000000
             },
             "line": 53,
             "match": {
@@ -1252,7 +1252,7 @@
             "name": "user should go back to Dental page",
             "result": {
               "status": "failed",
-              "duration": 25890000000,
+              "duration": 25909000000,
               "error_message": "Error: function timed out, ensure the promise resolves within 25000 milliseconds\n    at Timeout.<anonymous> (C:\\Users\\pauli\\Desktop\\indigo\\test3\\parkis_TA\\node_modules\\@cucumber\\cucumber\\src\\time.ts:53:14)\n    at listOnTimeout (node:internal/timers:559:17)\n    at processTimers (node:internal/timers:502:7)"
             },
             "line": 54,
@@ -1301,9 +1301,9 @@
         "keyword": "Scenario",
         "type": "scenario",
         "description": "",
-        "name": "Test Dental main section",
+        "name": "View Dental main section",
         "tags": [],
-        "id": "test-for-dental-page;test-dental-main-section",
+        "id": "test-for-dental-page;view-dental-main-section",
         "line": 0,
         "steps": [
           {
@@ -1331,7 +1331,7 @@
             "name": "the user is on the Dental page",
             "result": {
               "status": "passed",
-              "duration": 299000000
+              "duration": 298000000
             },
             "line": 56,
             "match": {
@@ -1350,7 +1350,7 @@
             "name": "the title and description of What is Dental Insurance? should be correct",
             "result": {
               "status": "passed",
-              "duration": 624000000
+              "duration": 636000000
             },
             "line": 57,
             "match": {
@@ -1369,7 +1369,7 @@
             "name": "who typically needs it most? title should be correct",
             "result": {
               "status": "passed",
-              "duration": 33000000
+              "duration": 38000000
             },
             "line": 58,
             "match": {
@@ -1388,7 +1388,7 @@
             "name": "picture and description of offering for Families should be correct",
             "result": {
               "status": "passed",
-              "duration": 113000000
+              "duration": 138000000
             },
             "line": 59,
             "match": {
@@ -1407,7 +1407,7 @@
             "name": "picture and description of offering for Older people plan should be correct",
             "result": {
               "status": "passed",
-              "duration": 142000000
+              "duration": 109000000
             },
             "line": 60,
             "match": {
@@ -1426,7 +1426,7 @@
             "name": "picture and description of offering for Dental issues plan should be correct",
             "result": {
               "status": "passed",
-              "duration": 119000000
+              "duration": 151000000
             },
             "line": 61,
             "match": {
@@ -1488,7 +1488,7 @@
             "name": "the user is on the Dental page",
             "result": {
               "status": "passed",
-              "duration": 457000000
+              "duration": 437000000
             },
             "line": 63,
             "match": {
@@ -1507,7 +1507,7 @@
             "name": "the title and description of start quiz section should be correct",
             "result": {
               "status": "passed",
-              "duration": 609000000
+              "duration": 620000000
             },
             "line": 64,
             "match": {
@@ -1526,7 +1526,7 @@
             "name": "get started button text should be correct",
             "result": {
               "status": "passed",
-              "duration": 67000000
+              "duration": 73000000
             },
             "line": 65,
             "match": {
@@ -1545,7 +1545,7 @@
             "name": "find get started button is working",
             "result": {
               "status": "passed",
-              "duration": 70000000
+              "duration": 80000000
             },
             "line": 66,
             "match": {
@@ -1564,7 +1564,7 @@
             "name": "Quizzard page should be opened",
             "result": {
               "status": "passed",
-              "duration": 570000000
+              "duration": 591000000
             },
             "line": 67,
             "match": {
@@ -1626,7 +1626,7 @@
             "name": "the user is on the Dental page",
             "result": {
               "status": "passed",
-              "duration": 327000000
+              "duration": 321000000
             },
             "line": 69,
             "match": {
@@ -1645,7 +1645,7 @@
             "name": "the title and description of brighter card should be correct",
             "result": {
               "status": "passed",
-              "duration": 612000000
+              "duration": 590000000
             },
             "line": 70,
             "match": {
@@ -1664,7 +1664,7 @@
             "name": "the brighter card has icons",
             "result": {
               "status": "passed",
-              "duration": 69000000
+              "duration": 109000000
             },
             "line": 71,
             "match": {
@@ -1683,7 +1683,7 @@
             "name": "the brighter card has a picture",
             "result": {
               "status": "passed",
-              "duration": 63000000
+              "duration": 61000000
             },
             "line": 72,
             "match": {

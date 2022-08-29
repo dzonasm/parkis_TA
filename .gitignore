@@ -1,1 +1,4 @@
-node_modules
+# Node artifact files
+node_modules/
+dist/
+reports/

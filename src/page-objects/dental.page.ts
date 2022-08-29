@@ -1,10 +1,6 @@
-import { Data } from '../data/dental.data';
 import urls from '../data/urls';
-import { expectAttributeToContain, expectText, expectToExist, expectURL, expectValue } from '../helpers/validators';
 import { clickElement, getElement, getNthElement } from '../helpers/elements';
-
 import { Page } from './page';
-
 
 export default class dental extends Page {
   open() {
@@ -119,7 +115,7 @@ export default class dental extends Page {
     return getElement('[ta-id="sidebar_758035548"]');
   }
 
-  get dentalBrighterCardIcon() {
+  get dentalBrighterCardDentalGreenIcon() {
     return getElement('mercer-app-offerings-sidebar > div > brighter-icon > svg > use');
   }
 
@@ -137,181 +133,5 @@ export default class dental extends Page {
 
   get dentalBrighterCardImg() {
     return getElement('[ta-id="sidebar_909911467"]');
-  }
-  
-  async validateUrl() {
-    await expectURL(urls.healthcareProducts.dental, true);
-  }
-
-  async validateDentalFamiliesTitleImgAtribute() {
-    await expectAttributeToContain(this.dentalFamiliesTitleImage, "xlink:href", "/brighter-assets/icons/green_icons.svg#People-Green");
-  }
-
-  async validateDentalOlderPeopleTitleImgAtribute() {
-    await expectAttributeToContain(this.dentalOlderPeopleTitleImage, "xlink:href", "/brighter-assets/icons/green_icons.svg#Dragonfly-Green");
-  }
-
-  async validateDentalIssuesTitleImgAtribute() {
-    await expectAttributeToContain(this.dentalIssuesTitleImage, "xlink:href", "/brighter-assets/icons/green_icons.svg#Dental-Green");
-  }
-
-  async validateDentalOfferingsHrefAtribute() {
-    await expectAttributeToContain(this.dentalOfferingsHref, "href", "/client/indigo/offerings");
-  }
-
-  async validateDentalHealtcareHrefAtribute() {
-    await expectAttributeToContain(this.dentalHealtcareHref, "href", "/client/indigo/offerings/606d91a9cf72104f54e0ddd9");
-  }
-
-  async validateDentalTitle() {
-    await expectText(this.dentalTitleElem, Data.dentalTitle);
-  }
-
-  async validateDentalDescription() {
-    await expectText(this.dentalDescriptionElem, Data.dentalDescription);
-  }
-
-  async validateDentalHeaderTitleImg() {
-    await expectToExist(this.dentalHeaderTitleImage);
-  }
-  
-  async validateDentalOfferTitle() {
-    await expectText(this.dentalOfferTitleElem, Data.dentalOfferTitle);
-  }
-
-  async validateDentalOfferrDescription() {
-    await expectText(this.dentalOfferDescriptionElem, Data.dentalOfferDescription);
-  }
-
-  async validateDentalButtonFindYourProductElem() {
-    await expectToExist(this.dentalButtonFindYourProductElem);
-  }
-  
-  async validateDentalButtonFindYourProductTextElem() {
-    await expectText(this.dentalButtonFindYourProductTextElem, Data.dentalButtonFindYourProductText);
-  }
-
-  async validateDentalButtonIsWorking() {
-    await clickElement(this.dentalButtonFindYourProductElem, true);
-  }
-
-  async validateDentalFamiliesTitle() {
-    await expectText(this.dentalFamiliesTitleElem, Data.dentalFamiliesTitle);
-  }
-  
-  async validateDentalFamiliesDescription() {
-    await expectText(this.dentalFamiliesDescriptionElem, Data.dentalFamiliesDescription);
-  }
-  
-  async validateDentalFamiliesTitleImg() {
-    await expectToExist(this.dentalFamiliesTitleImage);
-  }
-
-  async validateOlderPeopleTitle() {
-    await expectText(this.dentalOlderPeopleTitleElem, Data.dentalOlderPeopleTitle);
-  }
-
-  async validateOlderPeopleDescription() {
-    await expectText(this.dentalOlderPeopleDescriptionElem, Data.dentalOlderPeopleDescription);
-  }
-
-  async validateOlderPeopleTitleImg() {
-    await expectToExist(this.dentalOlderPeopleTitleImage);
-  }
-
-  async validateDentalIssuesTitle() {
-    await expectText(this.dentalDentalIssuesTitleElem, Data.dentalIssuesTitle);
-  }
-
-  async validateDentalIssuesDescription() {
-    await expectText(this.dentalIssuesDescriptionElem, Data.dentalIssuesDescription);
-  }
-
-  async validateDentalIssuesTitleImg() {
-    await expectToExist(this.dentalIssuesTitleImage);
-  }
-
-  async validateDentalOfferingsLinkText() {
-    await expectText(this.dentalOfferingsLinkTextElem, Data.dentalOfferingsLinkText);
-  }
-  
-  async validateDentalHealtcareLinkText() {
-    await expectText(this.dentalHealtcareLinkTextElem, Data.dentalHealtcareLinkText);
-  }
-  
-  async clickDentalOfferingsLink() {
-    await clickElement(this.dentalOfferingsLinkTextElem, true);
-  }
-
-  async clickDentalHealtcareLink() {
-    await clickElement(this.dentalHealtcareLinkTextElem, true);
-  }
-  
-  async validateStartQuizlTitle() {
-    await expectText(this.dentalStartQuizTitleElem, Data.dentalStartQuizlTitle);
-  }
-
-  async validateStartQuizDescription() {
-    await expectText(this.dentalStartQuizDescriptionElem, Data.dentalStartQuizDescription);
-  }
-
-  async validateStartQuizTitleImg() {
-    await expectToExist(this.dentalStartQuizTitleImage);
-  }
-
-  async validateHeaderTitleImgAtribute() {
-    await expectAttributeToContain(this.dentalHeaderTitleImage, "xlink:href", "/brighter-assets/icons/green_icons.svg#Dental-Green");
-  }
-
-  async validateDentalButtonStartQuizElem() {
-    await expectToExist(this.dentalButtonStartQuizElem);
-  }
-  
-  async validateDentalButtonStartQuizTextElem() {
-    await expectText(this.dentalButtonStartQuizTextElem, Data.dentalButtonStartQuizText);
-  }
-
-  async validateDentalButtonStartQuizIsWorking() {
-    await clickElement(this.dentalButtonStartQuizElem, true);
-  }
-
-  async validateDentalBrighterCardTitleElem() {
-    await expectText(this.dentalBrighterCardTitleElem, Data.dentalBrighterCardTitle);
-  }
-
-  async validateDentalBrighterCardDescriptionElem() {
-    await expectText(this.dentalBrighterCardDescriptionElem, Data.dentalBrighterCardDescription);
-  }
-
-  async validateBrighterCardImage() {
-    await expectToExist(this.dentalBrighterCardIcon);
-  }
-
-  async validateBrighterCardVideoIcon() {
-    await expectToExist(this.dentalBrighterCardVideoIcon);
-  }
-
-  async validateBrighterCardIconAtribute() {
-    await expectAttributeToContain(this.dentalBrighterCardIcon, "xlink:href", "/brighter-assets/icons/green_icons.svg#Dental-Green");
-  }
-
-  async validateBrighterCardVideoIconAtribute() {
-    await expectAttributeToContain(this.dentalBrighterCardIcon, "xlink:href", "/brighter-assets/icons/green_icons.svg#Video-Green");
-  }
-
-  async clickDentalBrighterCardVideo() {
-    await clickElement(this.dentalBrighterCardVideo);
-  }
-
-  async validateDentalMainSubTitleElem() {
-    await expectText(this.dentalMainSubTitleElem, Data.dentalmainSubTitle);
-  }
-
-  async validateBrighterCardImg() {
-    await expectToExist(this.dentalBrighterCardImg);
-  }
-
-  async validateBrighterCardImgAtribute() {
-    await expectAttributeToContain(this.dentalBrighterCardImg, "src", "/assets/images/video/video_dental.jpg");
   }
 }

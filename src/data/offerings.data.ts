@@ -1,3 +1,3 @@
-export const Data = {
+export const OfferingsData = {
    offeringsTitleText: "Offerings essential to your world"
   };
