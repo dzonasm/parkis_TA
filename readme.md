@@ -15,6 +15,7 @@
 *.data files:
 
 - template how to name variable:
+```
              ------------------------------------------------------------------------
             |   {page}  | {section} |      {sub-section(s)}     | {element} | {type} |
              ------------------------------------------------------------------------
@@ -24,6 +25,7 @@ Examples:
              ------------------------------------------------------------------------
             |  dental   |    Main   |          Content          |   Title   |  Text  |
              ------------------------------------------------------------------------
+```
 
 {page} = vision, dental, healthcare, quizzard...
 {section, sub-section} = nav, header, main, sidebar, footer, breadcrumb...
