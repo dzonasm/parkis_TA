@@ -1,4 +1,4 @@
-import { Data } from '../data/vision.data';
+import { VisionData } from '../data/vision.data';
 import urls from '../data/urls';
 import { clickElement, getElement, getElementText } from '../helpers/elements';
 import { expectAttributeToContain, expectText, expectToExist, expectURL } from '../helpers/validators';
@@ -11,167 +11,67 @@ export default class Vision extends Page {
     return super.open(urls.healthcareProducts.vision);
   }
 
-  get visionHeaderImageElem() {
-    return getElement('mercer-app-offering-header brighter-icon > svg > use');
-  }
-
-  get visionOfferingsLinkInBreadcrumb() {
+  get visionMainHeaderBreadcrumbOfferingsLinkElem() {
     return getElement('mercer-breadcrumb-nav > div > div:nth-child(1) > span > a > span');
   }
 
-  get visionHealthcareLinkInBreadcrumb() {
+  get visiomMainHeaderBreadcrumbHealthcareLinkElem() {
     return getElement('mercer-breadcrumb-nav > div > div:nth-child(2) > span > a > span');
   }
 
-  get visionVisionInsuranceText() {
+  get visionMainHeaderVisionInsuranceTextElem() {
     return getElement('div.mos-u-display--inline.mos-c-breadcrumb__last.ng-star-inserted > span');
   }
 
-  get visionBreadcrumbFirstIcon() {
+  get visionMainHeaderBreadcrumbFirstArrowIconElem() {
     return getElement('div:nth-child(1) > span > mercer-icon > svg > use');
   }
 
-  get visionBreadcrumbSecondIcon() {
+  get visionMainHeaderBreadcrumbSecondArrowIconElem() {
     return getElement('div:nth-child(2) > span > mercer-icon > svg > use');
   }
 
-  get visionTitleElem() {
+  get visionMainHeaderImgElem() {
+    return getElement('mercer-app-offering-header brighter-icon > svg > use');
+  }
+
+  get visionMainHeaderTitleElem() {
     return getElement('[ta-id="offering-header_581809928"]');
   }
 
-  get visionDescriptionElem() {
+  get visionMainHeaderDescElem() {
     return getElement('.brighter-p-large');
   }
 
-  get visionFindYourProductButton() {
+  get visionMainHeaderBtnFindYourProductElem() {
     return getElement('[ta-id="offering-header_393197785"]');
   }
 
-  get visionParHeaderElem() {
+  get visionMainContentHeaderElem() {
     return getElement('[ta-id="offering-product_353375929"]');
   }
 
-  get visionParTextElem() {
+  get visionMainContentDescElem() {
     return getElement('[ta-id="offering-product_558789590"]');
   }
 
-  get visionSidebarTitleElem() {
+  get visionMainSidebarTitleElem() {
     return getElement('[ta-id="offering-product_608648035"]');
   }
 
-  get visionSidebarFirstSubheaderElem() {
+  get visionMainSidebarFirstSubheaderDescElem() {
     return getElement('mercer-app-offerings-sidebar > div > div:nth-child(1)');
   }
 
-  get visionSidebarFirstSubheaderElemText() {
-    return getElementText('mercer-app-offerings-sidebar > div > div:nth-child(1)');
-  }
-
-  get visionSidebarSecondSubheaderElem() {
+  get visionMainSidebarSecondSubheaderDescElem() {
     return getElement('mercer-app-offerings-sidebar > div > div:nth-child(3)');
   }
 
-  get visionSidebarSecondSubheaderElemText() {
-    return getElementText('mercer-app-offerings-sidebar > div > div:nth-child(3)');
-  }
-
-  get visionSidebarImage() {
+  get visionMainSidebarImg() {
     return getElement('mercer-app-offerings-sidebar > div > brighter-icon > svg > use');
   }
 
   async validateUrl() {
     await expectURL(urls.healthcareProducts.vision, true);
-  }
-
-  async validateVisionTitleText() {
-    await expectText(this.visionTitleElem, Data.visionTitle);
-  }
-
-  async validateVisionTitleElem() {
-    await expectToExist(this.visionTitleElem);
-  }
-
-  async validateVisionDescription() {
-    await expectText(this.visionDescriptionElem, Data.visionHeaderDescription);
-  }
-
-  async validateVisionHeaderImage() {
-    await expectToExist(this.visionHeaderImageElem);
-  }
-
-  async validateCorrectVisionHeaderImageIsDisplayed() {
-    await expectAttributeToContain(this.visionHeaderImageElem, "xlink:href", "/brighter-assets/icons/green_icons.svg#Glasses-Green")
-  }
-
-  async validateVisionParHeader() {
-    await expectText(this.visionParHeaderElem, Data.visionPararagraphHeader);
-  }
-
-  async validateVisionParText() {
-    await expectText(this.visionParTextElem, Data.visionParagraphText);
-  }
-
-  async validateOfferingsLinkBreacrumbText() {
-    await expectText(this.visionOfferingsLinkInBreadcrumb, Data.visionOfferingsLinkBreadcrumbText);
-  }
-
-  async validateHealthcareLinkBreacrumbText() {
-    await expectText(this.visionHealthcareLinkInBreadcrumb, Data.visionHealthcareLinkBreadcrumbText);
-  }
-
-  async validateVisionInsuranceBreadcrumbText() {
-    await expectText(this.visionVisionInsuranceText, Data.visionVisionInsuranceBreadcrumbText);
-  }
-
-  async clickOfferingsLinkOnBreadcrumb() {
-    await clickElement(this.visionOfferingsLinkInBreadcrumb, true);
-  }
-
-  async clickHealthcareLinkOnBreadcrumb() {
-    await clickElement(this.visionHealthcareLinkInBreadcrumb, true);
-  }
-  
-  async validateVisionBreadcrumbFirstIcon() {
-    await expectToExist(this.visionBreadcrumbFirstIcon);
-  }
-
-  async validateVisionBreadcrumbSecondIcon() {
-    await expectToExist(this.visionBreadcrumbSecondIcon);
-  }
-
-  async validateCorrectVisionBreadcrumbIconIsDisplayed(icon) {
-    await expectAttributeToContain(icon, "xlink:href", "#mos-icon-keyboard_arrow_right")
-  }
-
-  async validateFindYourProductButtonText() {
-    await expectText(this.visionFindYourProductButton, Data.visionButtonFindYourProductText);
-  }
-
-  async clickFindYourProductButton() {
-    await clickElement(this.visionFindYourProductButton, true);
-  }
-
-  async validateSidebarTitleElem() {
-    await expectToExist(this.visionSidebarTitleElem);
-  }
-
-  async validateSidebarTitleText() {
-    await expectText(this.visionSidebarTitleElem, Data.visionSidebarTitleText);
-  }
-
-  async validateSidebarFirstSubheaderText() {
-    await expectText(this.visionSidebarFirstSubheaderElem, Data.visionSidebarFirstSubheaderText);
-  }
-
-  async validateSidebarSecondSubheaderText() {
-    await expectText(this.visionSidebarSecondSubheaderElem, Data.visionSidebarSecondSubheaderText);
-  }
-
-  async validateSidebarImage() {
-    await expectToExist(this.visionSidebarImage);
-  }
-
-  async validateCorrectSidebarImageIsDisplayed() {
-    await expectAttributeToContain(this.visionSidebarImage, "xlink:href", "/brighter-assets/icons/green_icons.svg#Glasses-Green")
   }
 }

@@ -1,3 +1,3 @@
-export const Data = {
+export const HealthcareData = {
   healthcareTitleText: 'Healthcare'
   };
