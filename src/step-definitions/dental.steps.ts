@@ -5,8 +5,6 @@ import Quizzard from '../page-objects/quizzard.page';
 import Offerings from '../page-objects/offerings.page';
 import Healthcare from '../page-objects/healthcare.page';
 import { Data } from "../data/dental.data";
-import { OfferingsData } from "../data/offerings.data";
-import { HealthcareData } from "../data/healthcare.data";
 import { QuizzardData } from '../data/quizzard.data';
 import urls from "../data/urls";
 import { clickElement, getElement, getNthElement } from "../helpers/elements";
@@ -22,41 +20,43 @@ When(/^the Dental Insurance product page is opened$/, async () => {
   await expectURL(urls.healthcareProducts.dental, true);
 });
 
-Then(/^the Dental title and description should be correct$/, async () => {              
+Then(/^the Dental title, description and picture should be correct$/, async () => {              
   await expectText(await Page.dentalTitleElem, Data.dentalTitle);
   await expectText(await Page.dentalDescriptionElem, Data.dentalDescription);
   await expectToExist(await Page.dentalHeaderTitleImage);
   await expectAttributeToContain(await Page.dentalHeaderTitleImage, "xlink:href", "/brighter-assets/icons/green_icons.svg#Dental-Green");
 });
 
-Then(/^user can see Offerings link$/, async () => {
+Then(/^user can see breadcrumb Offerings link$/, async () => {
   await expectText(await Page.dentalOfferingsLinkTextElem, Data.dentalOfferingsLinkText);
   await expectAttributeToContain(await Page.dentalOfferingsHref, "href", "/client/indigo/offerings");
 });
 
-Then(/^user can see Healthcare link$/, async () => {
+Then(/^user can see breadcrumb Healthcare link$/, async () => {
   await expectText(await Page.dentalHealtcareLinkTextElem, Data.dentalHealtcareLinkText);
   await expectAttributeToContain(await Page.dentalHealtcareHref, "href", "/client/indigo/offerings/606d91a9cf72104f54e0ddd9");
 });
 
-Then(/^find Offerings link is working$/, async () => {
+Then(/^user clicks on Offerings breadcrumb link$/, async () => {
   await clickElement(await Page.dentalOfferingsLinkTextElem, true);
 });
 
-Then(/^the Offerings page is opened$/, async () => {
-  await expectURL(urls.offerings.base, true);
+Then(/^user is navigated to Offerings page$/, async () => {
   await expectToExist(await _Offerings.offeringsTitleElem);
-  await expectText(await _Offerings.offeringsTitleElem, OfferingsData.offeringsTitleText);
 });
 
-Then(/^find Healtcare link is working$/, async () => {
+Then(/user should return to Dental page$/, async () => {
+  browser.back();
+  await expectToExist(await Page.dentalHeaderTitleImage);
+  await expectURL(urls.healthcareProducts.dental, true);
+});
+
+Then(/^user clicks on Healtcare breadcrumb link$/, async () => {
   await clickElement(await Page.dentalHealtcareLinkTextElem, true);
 });
 
-Then(/^the Healtcare page is opened/, async () => {
-  await expectURL(urls.offerings.healthcare, true);
+Then(/^user is navigated to Healtcare page/, async () => {
   await expectToExist(await _Healthcare.healthcareTitleElem);
-  await expectText(await _Healthcare.healthcareTitleElem, HealthcareData.healthcareTitleText);
 });
 
 Then(/^find your product button for Dental\? is working$/, async () => {
@@ -70,7 +70,7 @@ Then(/^the Quizzard page is opened$/, async () => {
   await expectURL(urls.quiz);
 });
 
-Then(/^validate back button label and click it$/, async () => {
+Then(/^user clicks on back button$/, async () => {
   await expectText(await _Quizzard.quizzardBackButtonText, QuizzardData.quizzardButtonText);
   await clickElement(await _Quizzard.quizzardBackButton, true);
 });
@@ -80,7 +80,6 @@ Then(/^user should go back to Dental page$/, async () => {
   await expectURL(urls.healthcareProducts.dental, true);
 });
 
-//
 Then(/^the title and description of What is Dental Insurance\? should be correct$/, async () => {
   await expectText(await Page.dentalOfferTitleElem, Data.dentalOfferTitle);
   await expectText(await Page.dentalOfferDescriptionElem, Data.dentalOfferDescription);
@@ -89,8 +88,6 @@ Then(/^the title and description of What is Dental Insurance\? should be correct
 Then(/^who typically needs it most\? title should be correct$/, async () => {
   await expectText(await Page.dentalMainSubTitleElem, Data.dentalmainSubTitle);
 });
-
-/////////////////////////////////////////////////////////////////
 
 Then(/^check the following data of offerings first column is correct$/, async (table) => {
   const dentalFirstColumnDataTable = await table.rowsHash();
@@ -111,26 +108,6 @@ Then(/^check the following data of offerings third column is correct$/, async (t
   await expectText(await Page.dentalDentalIssuesTitleElem, dentalThirdColumnDataTable.Subtitle);
   await expectText(await Page.dentalIssuesDescriptionElem, dentalThirdColumnDataTable.Description);
   await expectAttributeToContain(await Page.dentalIssuesTitleImage, "xlink:href", dentalThirdColumnDataTable.Picture);
-});
-
-Then(/^the title and description of start quiz section should be correct$/, async () => {
-  await expectToExist(await Page.dentalStartQuizTitleImage);
-  await expectText(await Page.dentalStartQuizDescriptionElem, Data.dentalStartQuizDescription);
-  await expectText(await Page.dentalStartQuizTitleElem, Data.dentalStartQuizlTitle);
-});
-
-Then(/^get started button text should be correct$/, async () => {
-  await expectToExist(await Page.dentalButtonStartQuizElem);
-  await expectText(await Page.dentalButtonStartQuizTextElem, Data.dentalButtonStartQuizText);
-});
-
-Then(/^find get started button is working$/, async () => {
-  await clickElement(await Page.dentalButtonStartQuizElem, true);
-});
-
-Then(/^Quizzard page should be opened$/, async () => {
-  await expectText(await _Quizzard.wizardCardTitleElem, QuizzardData.quizzardFirstQuestionHeaderText);
-  await expectURL(urls.quiz);
 });
 
 Then(/^the title and description of brighter card should be correct$/, async () => {
