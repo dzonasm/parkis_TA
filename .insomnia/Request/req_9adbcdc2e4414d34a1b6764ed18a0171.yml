@@ -1,7 +1,7 @@
 _id: req_9adbcdc2e4414d34a1b6764ed18a0171
 type: Request
 parentId: fld_a665c0b801374b37bf5806deccf64212
-modified: 1661163077193
+modified: 1661951154789
 created: 1660830820106
 url: http://localhost:3000/parking-reservations
 name: parking-reservation
@@ -9,18 +9,23 @@ description: ""
 method: POST
 body:
   mimeType: application/json
-  text: |-
-    {
-    		"userId": "1234567890",
-    		"parkingPlaceId": "24",
-    		"date": "2022-08-22T07:28:27.924Z"
-    }
+  text: |
+    
+    	{
+    		
+    		"userId": "630db215c74c78f190734b8d",
+    		"parkingPlaceId": "30",
+    		"date": "2022-08-18T12:17:34.016Z"
+
+    	}
 parameters: []
 headers:
   - name: Content-Type
     value: application/json
     id: pair_f472c2a01ef342f6bc4cda6b1006eeba
-authentication: {}
+authentication:
+  type: bearer
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBhdWxpdXMuYmFsdGFkdW9uaXNAbmFzY2VudC13b3Jrcy5jb20iLCJzdWIiOiIxMTUxMDgxNzY2MjI2NTkyMDQ1NTQiLCJyb2xlIjoiVXNlciIsImlhdCI6MTY2MTkzMTQ4MCwiZXhwIjoxNjYxOTM1MDgwfQ.yuZlALbP9rsPO_hsi4NfmAFnsAHV5G9RhkOrah-xALg
 metaSortKey: -1661153260633
 isPrivate: false
 settingStoreCookies: true
