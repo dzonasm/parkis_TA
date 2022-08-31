@@ -22,7 +22,7 @@ When(/^the Dental Insurance product page is opened$/, async () => {
   await expectURL(urls.healthcareProducts.dental, true);
 });
 
-Then(/^the Dental title and description should be correct$/, async () => {
+Then(/^the Dental title and description should be correct$/, async () => {              
   await expectText(await Page.dentalTitleElem, Data.dentalTitle);
   await expectText(await Page.dentalDescriptionElem, Data.dentalDescription);
   await expectToExist(await Page.dentalHeaderTitleImage);
@@ -80,6 +80,7 @@ Then(/^user should go back to Dental page$/, async () => {
   await expectURL(urls.healthcareProducts.dental, true);
 });
 
+//
 Then(/^the title and description of What is Dental Insurance\? should be correct$/, async () => {
   await expectText(await Page.dentalOfferTitleElem, Data.dentalOfferTitle);
   await expectText(await Page.dentalOfferDescriptionElem, Data.dentalOfferDescription);
@@ -89,25 +90,27 @@ Then(/^who typically needs it most\? title should be correct$/, async () => {
   await expectText(await Page.dentalMainSubTitleElem, Data.dentalmainSubTitle);
 });
 
-Then(/^picture and description of offering for Families should be correct$/, async () => {
-  await expectText(await Page.dentalFamiliesTitleElem, Data.dentalFamiliesTitle);
-  await expectText(await Page.dentalFamiliesDescriptionElem, Data.dentalFamiliesDescription);
-  await expectToExist(await Page.dentalFamiliesTitleImage);
-  await expectAttributeToContain(await Page.dentalFamiliesTitleImage, "xlink:href", "/brighter-assets/icons/green_icons.svg#People-Green");
+/////////////////////////////////////////////////////////////////
+
+Then(/^check the following data of offerings first column is correct$/, async (table) => {
+  const dentalFirstColumnDataTable = await table.rowsHash();
+  await expectText(await Page.dentalFamiliesTitleElem, dentalFirstColumnDataTable.Subtitle);
+  await expectText(await Page.dentalFamiliesDescriptionElem, dentalFirstColumnDataTable.Description);
+  await expectAttributeToContain(await Page.dentalFamiliesTitleImage, "xlink:href", dentalFirstColumnDataTable.Picture);
+ });
+
+Then(/^check the following data of offerings second column is correct$/, async (table) => {
+  const dentalSecondColumnDataTable = await table.rowsHash();
+  await expectText(await Page.dentalOlderPeopleTitleElem, dentalSecondColumnDataTable.Subtitle);
+  await expectText(await Page.dentalOlderPeopleDescriptionElem, dentalSecondColumnDataTable.Description);
+  await expectAttributeToContain(await Page.dentalOlderPeopleTitleImage, "xlink:href", dentalSecondColumnDataTable.Picture);
 });
 
-Then(/^picture and description of offering for Older people plan should be correct$/, async () => {
-  await expectText(await Page.dentalOlderPeopleTitleElem, Data.dentalOlderPeopleTitle);
-  await expectText(await Page.dentalOlderPeopleDescriptionElem, Data.dentalOlderPeopleDescription);
-  await expectToExist(await Page.dentalOlderPeopleTitleImage);
-  await expectAttributeToContain(await Page.dentalOlderPeopleTitleImage, "xlink:href", "/brighter-assets/icons/green_icons.svg#Dragonfly-Green");
-});
-
-Then(/picture and description of offering for Dental issues plan should be correct$/, async () => {
-  await expectText(await Page.dentalDentalIssuesTitleElem, Data.dentalIssuesTitle);
-  await expectText(await Page.dentalIssuesDescriptionElem, Data.dentalIssuesDescription);
-  await expectToExist(await Page.dentalIssuesTitleImage);
-  await expectAttributeToContain(await Page.dentalIssuesTitleImage, "xlink:href", "/brighter-assets/icons/green_icons.svg#Dental-Green");
+Then(/^check the following data of offerings third column is correct$/, async (table) => {
+  const dentalThirdColumnDataTable = await table.rowsHash();
+  await expectText(await Page.dentalDentalIssuesTitleElem, dentalThirdColumnDataTable.Subtitle);
+  await expectText(await Page.dentalIssuesDescriptionElem, dentalThirdColumnDataTable.Description);
+  await expectAttributeToContain(await Page.dentalIssuesTitleImage, "xlink:href", dentalThirdColumnDataTable.Picture);
 });
 
 Then(/^the title and description of start quiz section should be correct$/, async () => {

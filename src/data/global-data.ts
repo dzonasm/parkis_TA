@@ -37,8 +37,4 @@ export const ContextPages = {
 
   /* Offerings */
   Offerings: ['offerings'],
-
-  /* Testing */
-  Testing: ['testing'],
-
 };
