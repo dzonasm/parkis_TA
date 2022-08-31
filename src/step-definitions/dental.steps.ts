@@ -21,24 +21,24 @@ When(/^the Dental Insurance product page is opened$/, async () => {
 });
 
 Then(/^the Dental title, description and picture should be correct$/, async () => {              
-  await expectText(await Page.dentalTitleElem, Data.dentalTitle);
-  await expectText(await Page.dentalDescriptionElem, Data.dentalDescription);
-  await expectToExist(await Page.dentalHeaderTitleImage);
-  await expectAttributeToContain(await Page.dentalHeaderTitleImage, "xlink:href", "/brighter-assets/icons/green_icons.svg#Dental-Green");
+  await expectText(await Page.dentalMainHeaderTitleElem, Data.dentalMainHeaderTitleText);
+  await expectText(await Page.dentalMainHeaderDescElem, Data.dentalMainHeaderDescText);
+  await expectToExist(await Page.dentalMainHeaderImgElem);
+  await expectAttributeToContain(await Page.dentalMainHeaderImgElem, "xlink:href", "/brighter-assets/icons/green_icons.svg#Dental-Green");
 });
 
 Then(/^user can see breadcrumb Offerings link$/, async () => {
-  await expectText(await Page.dentalOfferingsLinkTextElem, Data.dentalOfferingsLinkText);
-  await expectAttributeToContain(await Page.dentalOfferingsHref, "href", "/client/indigo/offerings");
+  await expectText(await Page.dentalMainHeaderBreadcrumbOfferingsTextElem, Data.dentalMainHeaderBreadcrumbOfferingsText);
+  await expectAttributeToContain(await Page.dentalMainHeaderBreadcrumbOfferingsHredElem, "href", "/client/indigo/offerings");
 });
 
 Then(/^user can see breadcrumb Healthcare link$/, async () => {
-  await expectText(await Page.dentalHealtcareLinkTextElem, Data.dentalHealtcareLinkText);
-  await expectAttributeToContain(await Page.dentalHealtcareHref, "href", "/client/indigo/offerings/606d91a9cf72104f54e0ddd9");
+  await expectText(await Page.dentalMainHeaderBreadcrumbHealthcareTextElem, Data.dentalMainHeaderBreadcrumbHealtcareTextt);
+  await expectAttributeToContain(await Page.dentalMainHeaderBreadcrumbHealthcareHrefElem, "href", "/client/indigo/offerings/606d91a9cf72104f54e0ddd9");
 });
 
 Then(/^user clicks on Offerings breadcrumb link$/, async () => {
-  await clickElement(await Page.dentalOfferingsLinkTextElem, true);
+  await clickElement(await Page.dentalMainHeaderBreadcrumbOfferingsTextElem, true);
 });
 
 Then(/^user is navigated to Offerings page$/, async () => {
@@ -47,12 +47,12 @@ Then(/^user is navigated to Offerings page$/, async () => {
 
 Then(/user should return to Dental page$/, async () => {
   browser.back();
-  await expectToExist(await Page.dentalHeaderTitleImage);
+  await expectToExist(await Page.dentalMainHeaderImgElem);
   await expectURL(urls.healthcareProducts.dental, true);
 });
 
 Then(/^user clicks on Healtcare breadcrumb link$/, async () => {
-  await clickElement(await Page.dentalHealtcareLinkTextElem, true);
+  await clickElement(await Page.dentalMainHeaderBreadcrumbHealthcareTextElem, true);
 });
 
 Then(/^user is navigated to Healtcare page/, async () => {
@@ -60,9 +60,9 @@ Then(/^user is navigated to Healtcare page/, async () => {
 });
 
 Then(/^find your product button for Dental\? is working$/, async () => {
-  await expectToExist(await Page.dentalButtonFindYourProductElem);
-  await expectText(await Page.dentalButtonFindYourProductTextElem, Data.dentalButtonFindYourProductText);
-  await clickElement(await Page.dentalButtonFindYourProductElem, true);
+  await expectToExist(await Page.dentalMainHeaderBtnFindYourProductElem);
+  await expectText(await Page.dentalMainHeaderbtnFindYourProductTextElem, Data.dentalMainHeaderBtnFindYourProductText);
+  await clickElement(await Page.dentalMainHeaderBtnFindYourProductElem, true);
 });
 
 Then(/^the Quizzard page is opened$/, async () => {
@@ -76,54 +76,55 @@ Then(/^user clicks on back button$/, async () => {
 });
 
 Then(/^user should go back to Dental page$/, async () => {
-  await expectText(await Page.dentalTitleElem, Data.dentalTitle);
+  await expectText(await Page.dentalMainHeaderTitleElem, Data.dentalMainHeaderTitleText);
   await expectURL(urls.healthcareProducts.dental, true);
 });
 
 Then(/^the title and description of What is Dental Insurance\? should be correct$/, async () => {
-  await expectText(await Page.dentalOfferTitleElem, Data.dentalOfferTitle);
-  await expectText(await Page.dentalOfferDescriptionElem, Data.dentalOfferDescription);
+  await expectText(await Page.dentalMainContentTitleElem, Data.dentalMainContentHeaderText);
+  await expectText(await Page.dentalMainContentDescElem, Data.dentalMainContentHeaderDescText);
 });
 
 Then(/^who typically needs it most\? title should be correct$/, async () => {
-  await expectText(await Page.dentalMainSubTitleElem, Data.dentalmainSubTitle);
+  await expectText(await Page.dentalMainContentSubTitleElem, Data.dentalMainContentSubtitleText);
 });
 
 Then(/^check the following data of offerings first column is correct$/, async (table) => {
   const dentalFirstColumnDataTable = await table.rowsHash();
-  await expectText(await Page.dentalFamiliesTitleElem, dentalFirstColumnDataTable.Subtitle);
-  await expectText(await Page.dentalFamiliesDescriptionElem, dentalFirstColumnDataTable.Description);
-  await expectAttributeToContain(await Page.dentalFamiliesTitleImage, "xlink:href", dentalFirstColumnDataTable.Picture);
+  await expectText(await Page.dentalMainContentFirstColumnTitleElem, dentalFirstColumnDataTable.Subtitle);
+  await expectText(await Page.dentalMainContentFirstColumnDescElem, dentalFirstColumnDataTable.Description);
+  await expectAttributeToContain(await Page.dentalMainContentFirstColumnImgElem, "xlink:href", dentalFirstColumnDataTable.Picture);
  });
 
 Then(/^check the following data of offerings second column is correct$/, async (table) => {
   const dentalSecondColumnDataTable = await table.rowsHash();
-  await expectText(await Page.dentalOlderPeopleTitleElem, dentalSecondColumnDataTable.Subtitle);
-  await expectText(await Page.dentalOlderPeopleDescriptionElem, dentalSecondColumnDataTable.Description);
-  await expectAttributeToContain(await Page.dentalOlderPeopleTitleImage, "xlink:href", dentalSecondColumnDataTable.Picture);
+  await expectText(await Page.dentalMainContentSecondColumnTitleElem, dentalSecondColumnDataTable.Subtitle);
+  await expectText(await Page.dentalMainContentSecondColumnDescElem, dentalSecondColumnDataTable.Description);
+  await expectAttributeToContain(await Page.dentalMainContentSecondColumnImgElem, "xlink:href", dentalSecondColumnDataTable.Picture);
 });
 
 Then(/^check the following data of offerings third column is correct$/, async (table) => {
   const dentalThirdColumnDataTable = await table.rowsHash();
-  await expectText(await Page.dentalDentalIssuesTitleElem, dentalThirdColumnDataTable.Subtitle);
-  await expectText(await Page.dentalIssuesDescriptionElem, dentalThirdColumnDataTable.Description);
-  await expectAttributeToContain(await Page.dentalIssuesTitleImage, "xlink:href", dentalThirdColumnDataTable.Picture);
+  await expectText(await Page.dentalMainContentThirdColumnTitleTextElem, dentalThirdColumnDataTable.Subtitle);
+  await expectText(await Page.dentalMainContentThirdColumnDescElem, dentalThirdColumnDataTable.Description);
+  await expectAttributeToContain(await Page.dentalMainContentThirdColumnImgElem, "xlink:href", dentalThirdColumnDataTable.Picture);
 });
 
-Then(/^the title and description of brighter card should be correct$/, async () => {
-  await expectText(await Page.dentalBrighterCardTitleElem, Data.dentalBrighterCardTitle);
-  await expectText(await Page.dentalBrighterCardDescriptionElem, Data.dentalBrighterCardDescription);
+Then(/^the title and description of sidebar should be correct$/, async () => {
+  await expectText(await Page.dentalMainSidebarTitleElem, Data.dentalMainSidebarTitleText);
+  await expectText(await Page.dentalMainSidebarFirstDescElem, Data.dentalMainSidebarFirstSubheaderDescText);
+  await expectText(await Page.dentalMainSidebarSecondDescElem, Data.dentalMainSidebarSecondSubheaderDescText);
 });
 
-Then(/^the brighter card has icons$/, async () => {
-  await expectToExist(await Page.dentalBrighterCardDentalGreenIcon);
-  await expectAttributeToContain(await Page.dentalBrighterCardDentalGreenIcon, "xlink:href", "/brighter-assets/icons/green_icons.svg#Dental-Green");
-  await expectToExist(await Page.dentalBrighterCardVideoIcon);
-  await expectAttributeToContain(await Page.dentalBrighterCardVideoIcon, "xlink:href", "/brighter-assets/icons/green_icons.svg#Video-Green");
+Then(/^the sidebar has icons$/, async () => {
+  await expectToExist(await Page.dentalMainSidebarGreenIconElem);
+  await expectAttributeToContain(await Page.dentalMainSidebarGreenIconElem, "xlink:href", "/brighter-assets/icons/green_icons.svg#Dental-Green");
+  await expectToExist(await Page.dentalMainSidebarVideoElemn);
+  await expectAttributeToContain(await Page.dentalMainSidebarVideoElemn, "xlink:href", "/brighter-assets/icons/green_icons.svg#Video-Green");
 });
 
-Then(/^the brighter card has a picture$/, async () => {
-  await expectToExist(await Page.dentalBrighterCardImg);
-  await expectAttributeToContain(await Page.dentalBrighterCardImg, "src", "/assets/images/video/video_dental.jpg");
+Then(/^the sidebar has a picture$/, async () => {
+  await expectToExist(await Page.dentalMainSidebarImg);
+  await expectAttributeToContain(await Page.dentalMainSidebarImg, "src", "/assets/images/video/video_dental.jpg");
 });
 

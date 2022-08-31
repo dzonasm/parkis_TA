@@ -7,131 +7,110 @@ export default class dental extends Page {
     return super.open(urls.healthcareProducts.dental);
   }
 
-  get dentalHeaderTitleImage() {
+  get dentalMainHeaderImgElem() {
     return getElement('mercer-app-offering-header brighter-icon > svg > use');
   }
 
-  get dentalTitleElem() {
+  get dentalMainHeaderTitleElem() {
     return getElement('[ta-id="offering-header_581809928"]');
   }
 
-  get dentalDescriptionElem() {
+  get dentalMainHeaderDescElem() {
     return getElement('.brighter-p-large');
   }
   
-  get dentalOfferTitleElem() {
+  get dentalMainContentTitleElem() {
     return getElement('[ta-id="offering-product_353375929"]');
   }
 
-  get dentalOfferDescriptionElem() {
+  get dentalMainContentDescElem() {
     return getElement('[ta-id="offering-product_558789510"]');
   }
 
-  get dentalButtonFindYourProductElem() {
+  get dentalMainHeaderBtnFindYourProductElem() {
     return getElement('[ta-id="offering-header_844302377"]');
   }
 
-  get dentalButtonFindYourProductTextElem() {
+  get dentalMainHeaderbtnFindYourProductTextElem() {
     return getElement('[ta-id="offering-header_393197785"]');
   }
 
-  get dentalButtonStartQuizElem() {
-    return getElement('[ta-id="start-quiz_989449855"]');
-  }
-
-  get dentalButtonStartQuizTextElem() {
-    return getElement('[ta-id="start-quiz_797357212"]');
-  }
-
-  get dentalOfferingsLinkTextElem() {
+  get dentalMainHeaderBreadcrumbOfferingsTextElem() {
     return getElement('mercer-breadcrumb-nav > div > div:nth-child(1) > span > a > span');
   }
 
-  get dentalOfferingsHref() {
+  get dentalMainHeaderBreadcrumbOfferingsHredElem() {
     return getElement('mercer-breadcrumb-nav > div > div:nth-child(1) > span > a');
   }
 
-  get dentalHealtcareHref() {
+  get dentalMainHeaderBreadcrumbHealthcareHrefElem() {
     return getElement('mercer-breadcrumb-nav > div > div:nth-child(2) > span > a');
   }
 
-  get dentalHealtcareLinkTextElem() {
+  get dentalMainHeaderBreadcrumbHealthcareTextElem() {
     return getElement('mercer-breadcrumb-nav > div > div:nth-child(2) > span > a > span');
   }
 
-  get dentalFamiliesTitleElem() {
+  get dentalMainContentFirstColumnTitleElem() {
     return getElement('[ta-id="offering-product_760549029"]');
   }
 
-  get dentalFamiliesDescriptionElem() {
+  get dentalMainContentFirstColumnDescElem() {
     return getElement('[ta-id="offering-product_540480608"]');
   }
 
-  get dentalFamiliesTitleImage() {
+  get dentalMainContentFirstColumnImgElem() {
     return getNthElement('[ta-id="offering-product_896582148"] brighter-icon > svg > use', 0);
   }
 
-  get dentalOlderPeopleTitleElem() {
+  get dentalMainContentSecondColumnTitleElem() {
     return getElement('[ta-id="offering-product_46326510"]');
   }
 
-  get dentalOlderPeopleDescriptionElem() {
+  get dentalMainContentSecondColumnDescElem() {
     return getElement('[ta-id="offering-product_21256170"]');
   }
 
-  get dentalOlderPeopleTitleImage() {
+  get dentalMainContentSecondColumnImgElem() {
     return getNthElement('[ta-id="offering-product_896582148"] brighter-icon > svg > use', 1);
   }
 
-  get dentalDentalIssuesTitleElem() {
+  get dentalMainContentThirdColumnTitleTextElem() {
     return getElement('[ta-id="offering-product_846690178"]');
   }
 
-  get dentalIssuesDescriptionElem() {
+  get dentalMainContentThirdColumnDescElem() {
     return getElement('[ta-id="offering-product_245331089"]');
   }
 
-  get dentalIssuesTitleImage() {
+  get dentalMainContentThirdColumnImgElem() {
     return getNthElement('[ta-id="offering-product_896582148"] brighter-icon > svg > use', 2);
   }
 
-  get dentalStartQuizTitleImage() {
-    return getElement('mercer-app-start-quiz > div > div > div.get-started__card__content.pt-md-2.lg-pb-lg-1.pb-md-2.lg-pt-lg-1.pl-sm-2.pr-sm-2 > div > div > div:nth-child(1) > brighter-icon > svg > use');
-  }
-
-  get dentalStartQuizTitleElem() {
-    return getElement('[ta-id="start-quiz_194757426"]');
-  }
-
-  get dentalStartQuizDescriptionElem() {
-    return getElement('[ta-id="start-quiz_171906089"]');
-  }
-
-  get dentalBrighterCardTitleElem() {
+  get dentalMainSidebarTitleElem() {
     return getElement('[ta-id="offering-product_608648035"]');
   }
 
-  get dentalBrighterCardDescriptionElem() {
+  get dentalMainSidebarFirstDescElem() {
     return getElement('[ta-id="sidebar_758035548"]');
   }
+  get dentalMainSidebarSecondDescElem() {
+    return getElement('[ta-id="sidebar_53616545"]');
+  }
 
-  get dentalBrighterCardDentalGreenIcon() {
+  get dentalMainSidebarGreenIconElem() {
     return getElement('mercer-app-offerings-sidebar > div > brighter-icon > svg > use');
   }
 
-  get dentalBrighterCardVideoIcon() {
+  get dentalMainSidebarVideoElemn() {
     return getElement('brighter-card-content > div.p-lead-flex.brighter-p-lead > brighter-icon > svg > use');
   }
 
-  get dentalBrighterCardVideo() {
-    return getElement('[ta-id="sidebar_998391898"]');
-  }
-
-  get dentalMainSubTitleElem() {
+  get dentalMainContentSubTitleElem() {
     return getElement('[ta-id="offering-product_342314838"]');
   }
 
-  get dentalBrighterCardImg() {
+  get dentalMainSidebarImg() {
     return getElement('[ta-id="sidebar_909911467"]');
   }
 }

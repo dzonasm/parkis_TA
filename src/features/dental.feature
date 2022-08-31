@@ -9,7 +9,7 @@ Feature: Test for Dental page
     Then user is navigated to Offerings page
     Then user should return to Dental page
     And user clicks on Healtcare breadcrumb link
-    Then user is navigated to Offerings page
+    Then user is navigated to Healtcare page
 
   Scenario: User can go to Quizzard page from Dental page and from Quizzard page go back to the previuosly page
     Given the user is on the Dental page
@@ -38,9 +38,9 @@ Feature: Test for Dental page
 
   Scenario: View sidebar section
     Given the user is on the Dental page
-    Then the title and description of brighter card should be correct
-    And the brighter card has icons
-    And the brighter card has a picture
+    Then the title and description of sidebar should be correct
+    And the sidebar has icons
+    And the sidebar has a picture
 
 
 
