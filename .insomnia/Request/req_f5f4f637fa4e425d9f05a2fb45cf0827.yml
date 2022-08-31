@@ -1,16 +1,18 @@
 _id: req_f5f4f637fa4e425d9f05a2fb45cf0827
 type: Request
 parentId: fld_a665c0b801374b37bf5806deccf64212
-modified: 1661153270863
+modified: 1661934320964
 created: 1660831567637
-url: http://localhost:3000/parking-reservations/1234567890
+url: http://localhost:3000/parking-reservations/630f1ad4b91f765e1f646cd3
 name: parking-reservation<id>
 description: ""
 method: DELETE
 body: {}
 parameters: []
 headers: []
-authentication: {}
+authentication:
+  type: bearer
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBhdWxpdXMuYmFsdGFkdW9uaXNAbmFzY2VudC13b3Jrcy5jb20iLCJzdWIiOiIxMTUxMDgxNzY2MjI2NTkyMDQ1NTQiLCJyb2xlIjoiVXNlciIsImlhdCI6MTY2MTkzMTQ4MCwiZXhwIjoxNjYxOTM1MDgwfQ.yuZlALbP9rsPO_hsi4NfmAFnsAHV5G9RhkOrah-xALg
 metaSortKey: -1661153260783
 isPrivate: false
 settingStoreCookies: true
