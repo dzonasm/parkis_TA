@@ -8,7 +8,6 @@
     "lint:fix": "eslint --color --fix --quiet --ext .ts ./",
     "prettier": "prettier --write \"./**/*.ts\"",
     "test": "bash cleanup.sh && wdio wdio.conf.ts --env=stage --client=indigo && node format.js && npm run report",
-    "test2": "bash cleanup.sh && wdio wdio.conf.ts --env=stage --client=indigo",
     "build": "tsc -p tsconfig.json",
     "report": "node config/cucumber-reporter.ts"
   },
