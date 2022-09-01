@@ -1,6 +1,10 @@
+import { QuizzardData } from '../data/quizzard.data';
 import urls from '../data/urls';
+import { expectText, expectToExist, expectURL } from '../helpers/validators';
 import { clickElement, getElement } from '../helpers/elements';
+
 import { Page } from './page';
+
 
 export default class quizzard extends Page {
   open() {
@@ -19,7 +23,31 @@ export default class quizzard extends Page {
     return getElement('[ta-id="widget_900165588"]');
   }
 
-  get wizardCardTitleElem() {
+  get quizzardCardTitleElem() {
     return getElement('.brand-typography-display-h6');
+  }
+
+  async validateVisionUrl() {
+    await expectURL(urls.visionQuiz);
+  }
+
+  async validateQuizzardFirstQuestionHeaderText() {
+    await expectText(this.quizzardFirstQuestionHeaderText, QuizzardData.quizzardFirstQuestionHeaderText);
+  }
+
+  async validateQuizzardBackButton() {
+    await expectToExist(this.quizzardBackButton);
+  }
+
+  async validateQuizzardBackButtonText() {
+    await expectText(this.quizzardBackButtonText, QuizzardData.quizzardButtonText);
+  }
+
+  async clickBackButton() {
+    await clickElement(this.quizzardBackButton, true);
+  }
+
+  async validateQuizzardCardTitle() {
+    await expectText(this.quizzardCardTitleElem, QuizzardData.quizzardFirstQuestionHeaderText);
   }
 }

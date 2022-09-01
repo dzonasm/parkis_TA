@@ -1,3 +1,3 @@
 export const OfferingsData = {
-   offeringsTitleText: "Offerings essential to your world"
+   offeringsTitle: "Offerings essential to your world"
   };
