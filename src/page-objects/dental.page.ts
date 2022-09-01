@@ -1,121 +1,116 @@
-import { Data } from '../data/dental.data';
 import urls from '../data/urls';
-import { expectText, expectToExist, expectURL } from '../helpers/validators';
 import { clickElement, getElement, getNthElement } from '../helpers/elements';
-
 import { Page } from './page';
-
 
 export default class dental extends Page {
   open() {
     return super.open(urls.healthcareProducts.dental);
   }
 
-  get dentalMainTitleImage() {
+  get dentalMainHeaderImgElem() {
     return getElement('mercer-app-offering-header brighter-icon > svg > use');
   }
 
-  get dentalTitleElem() {
+  get dentalMainHeaderTitleElem() {
     return getElement('[ta-id="offering-header_581809928"]');
   }
 
-  get dentalDescriptionElem() {
+  get dentalMainHeaderDescElem() {
     return getElement('.brighter-p-large');
   }
   
-  get dentalOfferTitleElem() {
+  get dentalMainContentTitleElem() {
     return getElement('[ta-id="offering-product_353375929"]');
   }
 
-  get dentalOfferDescriptionElem() {
+  get dentalMainContentDescElem() {
     return getElement('[ta-id="offering-product_558789510"]');
   }
 
-  get dentalButtonFindYourProductElem() {
+  get dentalMainHeaderBtnFindYourProductElem() {
     return getElement('[ta-id="offering-header_844302377"]');
   }
 
-  get dentalButtonFindYourProductTextElem() {
+  get dentalMainHeaderbtnFindYourProductTextElem() {
     return getElement('[ta-id="offering-header_393197785"]');
   }
 
-  get dentalOfferingsLinkElem() {
+  get dentalMainHeaderBreadcrumbOfferingsTextElem() {
+    return getElement('mercer-breadcrumb-nav > div > div:nth-child(1) > span > a > span');
+  }
+
+  get dentalMainHeaderBreadcrumbOfferingsHredElem() {
     return getElement('mercer-breadcrumb-nav > div > div:nth-child(1) > span > a');
   }
 
-  //And who typically needs it most? title, pictures and descriptions for Dental should be displayed
-  get dentalFamiliesTitleElem() {
+  get dentalMainHeaderBreadcrumbHealthcareHrefElem() {
+    return getElement('mercer-breadcrumb-nav > div > div:nth-child(2) > span > a');
+  }
+
+  get dentalMainHeaderBreadcrumbHealthcareTextElem() {
+    return getElement('mercer-breadcrumb-nav > div > div:nth-child(2) > span > a > span');
+  }
+
+  get dentalMainContentFirstColumnTitleElem() {
     return getElement('[ta-id="offering-product_760549029"]');
   }
 
-  get dentalFamiliesDescriptionElem() {
+  get dentalMainContentFirstColumnDescElem() {
     return getElement('[ta-id="offering-product_540480608"]');
   }
 
-  get dentalFamiliesTitleImage() {
+  get dentalMainContentFirstColumnImgElem() {
     return getNthElement('[ta-id="offering-product_896582148"] brighter-icon > svg > use', 0);
   }
-  
-  async validateUrl() {
-    await expectURL(urls.healthcareProducts.dental, true);
+
+  get dentalMainContentSecondColumnTitleElem() {
+    return getElement('[ta-id="offering-product_46326510"]');
   }
 
-  async validateWizardUrl() {
-    await expectURL(urls.quiz, true);
+  get dentalMainContentSecondColumnDescElem() {
+    return getElement('[ta-id="offering-product_21256170"]');
   }
 
-  async validateDentalTitle() {
-    await expectText(this.dentalTitleElem, Data.dentalTitle);
+  get dentalMainContentSecondColumnImgElem() {
+    return getNthElement('[ta-id="offering-product_896582148"] brighter-icon > svg > use', 1);
   }
 
-  async validateDentalDescription() {
-    await expectText(this.dentalDescriptionElem, Data.dentalDescription);
+  get dentalMainContentThirdColumnTitleTextElem() {
+    return getElement('[ta-id="offering-product_846690178"]');
   }
 
-  async validateDentalTitleImg() {
-    await expectToExist(this.dentalMainTitleImage);
-  }
-  
-  async validateDentalOfferTitle() {
-    await expectText(this.dentalOfferTitleElem, Data.dentalOfferTitle);
+  get dentalMainContentThirdColumnDescElem() {
+    return getElement('[ta-id="offering-product_245331089"]');
   }
 
-  async validateDentalOfferrDescription() {
-    await expectText(this.dentalOfferDescriptionElem, Data.dentalOfferDescription);
-    await console.log(this.dentalOfferDescriptionElem);
+  get dentalMainContentThirdColumnImgElem() {
+    return getNthElement('[ta-id="offering-product_896582148"] brighter-icon > svg > use', 2);
   }
 
-  async validateDentalButtonFindYourProductElem() {
-    await expectToExist(this.dentalButtonFindYourProductElem);
-  }
-  
-  async validateDentalButtonFindYourProductTextElem() {
-    await expectText(this.dentalButtonFindYourProductTextElem, Data.dentalButtonFindYourProductText);
+  get dentalMainSidebarTitleElem() {
+    return getElement('[ta-id="offering-product_608648035"]');
   }
 
-  async validateDentalButtonIsWorking() {
-    await clickElement(this.dentalButtonFindYourProductElem, true);
+  get dentalMainSidebarFirstDescElem() {
+    return getElement('[ta-id="sidebar_758035548"]');
+  }
+  get dentalMainSidebarSecondDescElem() {
+    return getElement('[ta-id="sidebar_53616545"]');
   }
 
-  //And who typically needs it most? title, pictures and descriptions for Dental should be displayed
-  async validateDentalFamiliesTitle() {
-    await expectText(this.dentalFamiliesTitleElem, Data.dentalFamiliesTitle);
+  get dentalMainSidebarGreenIconElem() {
+    return getElement('mercer-app-offerings-sidebar > div > brighter-icon > svg > use');
   }
 
-  async validateDentalFamiliesDescription() {
-    await expectText(this.dentalFamiliesDescriptionElem, Data.dentalFamiliesDescription);
+  get dentalMainSidebarVideoElemn() {
+    return getElement('brighter-card-content > div.p-lead-flex.brighter-p-lead > brighter-icon > svg > use');
   }
 
-  async validateDentalFamiliesTitleImg() {
-    await expectToExist(this.dentalFamiliesTitleImage);
+  get dentalMainContentSubTitleElem() {
+    return getElement('[ta-id="offering-product_342314838"]');
   }
 
-  async validateDentalOfferingsLinkElem() {
-    await expectText(this.dentalOfferingsLinkElem, Data.dentalOfferingsLinkText);
+  get dentalMainSidebarImg() {
+    return getElement('[ta-id="sidebar_909911467"]');
   }
-
-  async validateDentalOfferingsLinkIsWorking() {
-    await clickElement(this.dentalOfferingsLinkElem, true);
-  }
-
 }

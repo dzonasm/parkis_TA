@@ -1,4 +1,4 @@
-import { Data } from '../data/quizzard.data';
+import { QuizzardData } from '../data/quizzard.data';
 import urls from '../data/urls';
 import { expectText, expectToExist, expectURL } from '../helpers/validators';
 import { clickElement, getElement } from '../helpers/elements';
@@ -32,15 +32,15 @@ export default class quizzard extends Page {
   }
 
   async validateQuizzardFirstQuestionHeaderText() {
-    await expectText(this.quizzardFirstQuestionHeaderText, Data.quizzardFirstQuestionHeaderText);
+    await expectText(this.quizzardFirstQuestionHeaderText, QuizzardData.quizzardFirstQuestionHeaderText);
   }
 
   async validateQuizzardBackButton() {
     await expectToExist(this.quizzardBackButton);
-  } 
+  }
 
   async validateQuizzardBackButtonText() {
-    await expectText(this.quizzardBackButtonText, Data.quizzardButtonText);
+    await expectText(this.quizzardBackButtonText, QuizzardData.quizzardButtonText);
   }
 
   async clickBackButton() {
@@ -48,6 +48,6 @@ export default class quizzard extends Page {
   }
 
   async validateQuizzardCardTitle() {
-    await expectText(this.quizzardCardTitleElem, Data.quizzardFirstQuestionHeaderText);
+    await expectText(this.quizzardCardTitleElem, QuizzardData.quizzardFirstQuestionHeaderText);
   }
 }
