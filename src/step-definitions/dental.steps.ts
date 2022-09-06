@@ -66,7 +66,7 @@ Then(/^find your product button for Dental\? is working$/, async () => {
 });
 
 Then(/^the Quizzard page is opened$/, async () => {
-  await expectText(await _Quizzard.wizardCardTitleElem, QuizzardData.quizzardFirstQuestionHeaderText);
+  await expectText(await _Quizzard.quizzardCardTitleElem, QuizzardData.quizzardFirstQuestionHeaderText);
   await expectURL(urls.quiz);
 });
 
