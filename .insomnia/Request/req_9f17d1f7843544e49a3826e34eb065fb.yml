@@ -1,7 +1,7 @@
 _id: req_9f17d1f7843544e49a3826e34eb065fb
 type: Request
 parentId: fld_a665c0b801374b37bf5806deccf64212
-modified: 1661937431551
+modified: 1662104460333
 created: 1660831538939
 url: http://localhost:3000/parking-reservations/630f1ad4b91f765e1f646cd3
 name: parking-reservation<id>
@@ -12,7 +12,7 @@ parameters: []
 headers: []
 authentication:
   type: bearer
-  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBhdWxpdXMuYmFsdGFkdW9uaXNAbmFzY2VudC13b3Jrcy5jb20iLCJzdWIiOiIxMTUxMDgxNzY2MjI2NTkyMDQ1NTQiLCJyb2xlIjoiVXNlciIsImlhdCI6MTY2MTkzNzEzOSwiZXhwIjoxNjYxOTQwNzM5fQ.bQg6-b_Ldck96cJpJND4GmfFICWOfbv2itM2iFv1Q8c
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBhdWxpdXMuYmFsdGFkdW9uaXNAbmFzY2VudC13b3Jrcy5jb20iLCJwcm92aWRlcklkIjoiMTE1MTA4MTc2NjIyNjU5MjA0NTU0Iiwicm9sZSI6IlVzZXIiLCJpYXQiOjE2NjIxMDMyNDIsImV4cCI6MTY2MjEwNjg0Mn0.isfGjYXG8oxoRP_lxj3lTjGWJSyWTjguIt0By9J2trQ
 metaSortKey: -1661153260683
 isPrivate: false
 settingStoreCookies: true
