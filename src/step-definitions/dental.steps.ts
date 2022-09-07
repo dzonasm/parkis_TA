@@ -67,7 +67,7 @@ Then(/^find your product button for Dental\? is working$/, async () => {
 
 Then(/^the Quizzard page is opened$/, async () => {
   await expectText(await _Quizzard.quizzardCardTitleElem, QuizzardData.quizzardFirstQuestionHeaderText);
-  await expectURL(urls.quiz);
+  await expectURL(urls.quizLinks.base);
 });
 
 Then(/^user clicks on back button$/, async () => {
