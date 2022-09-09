@@ -1,5 +1,5 @@
 import urls from '../data/urls';
-import { getElement, getElementText, getNthElement } from '../helpers/elements';
+import { clickElement, getElement, getElementText, getNthElement } from '../helpers/elements';
 
 import { Page } from './page';
 
@@ -43,10 +43,6 @@ export default class works extends Page {
         return getElement('mercer-app-how-it-works > div > div:nth-child(3) > div > div.mos-u-color-bg--white.p-sm-5.md-p-md-3 > div:nth-child(3) > div > div > div > div:nth-child(1) > p');
     }
 
-    // get howItWorksMainContentFirstCardIcon() {
-    //     return getNthElement('[ta-id="how-it-works_534363016"] brighter-icon > svg > use', 0);
-    // }
-
     get howItWorksMainContentFirstCardIcon() {
         return getElement('body > mercer-app > mercer-app-page-container > main > mercer-app-how-it-works > div > div:nth-child(3) > div > div.mos-u-color-bg--white.p-sm-5.md-p-md-3 > div:nth-child(3) > div > div > div > div:nth-child(1) > brighter-shape > div > brighter-icon > svg > use');
     }
@@ -83,7 +79,31 @@ export default class works extends Page {
         return getElement('body > mercer-app > mercer-app-page-container > main > mercer-app-how-it-works > div > div:nth-child(3) > div > div.mos-u-color-bg--white.p-sm-5.md-p-md-3 > div:nth-child(3) > div > div > div > div:nth-child(5) > brighter-shape > div > brighter-icon > svg > use');
     }
 
+    get howItWorksMainContentEligibleSectionFirstCardTitleElem() {
+        return getElement('[ta-id="eligibility-card_428534699"]');
+    }
+
+    get howItWorksMainContentEligibleSectionFirstCardDescElem() {
+        return getElement('[ta-id="eligibility-card_85433124"]');
+    }
+
+    get howItWorksMainContentEligibleSectionFirstCardPicture() {
+        return getElement('[ta-id="eligibility-card_728127540"]');
+    }
+
+    get howItWorksMainContentEligibleSectionFirstCardArrowIcon() {
+        return getElement('body > mercer-app > mercer-app-page-container > main > mercer-app-how-it-works > div > div:nth-child(3) > div > div.eligibility-background.ng-star-inserted > div > div > div.small-12.pl-md.lg-pl-0.md-pr-md > mercer-app-eligibility-card > div > div:nth-child(1) > brighter-card > div > div.brighter-card__content.ng-star-inserted > brighter-card-content > div.footer.mos-u-equalizer > div > button > div > span > brighter-icon > svg > use');
+    }
+
+    get howItWorksMainContentEligibleSectionFirstCardBtnText() {
+        return getElement('[ta-id="eligibility-card_866260170"]');
+    }
+   
     async howItWorksHeaderVideoElem(selector) {
+        return getElement(selector)
+    }
+
+    async howItWorksHeaderButtonElem(selector) {
         return getElement(selector)
     }
 

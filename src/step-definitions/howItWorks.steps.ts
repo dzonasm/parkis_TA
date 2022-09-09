@@ -63,4 +63,27 @@ Then(/^check the following data of main content fifth card is correct$/, async (
   await expectAttributeToContain(await _Works.howItWorksMainContentFifthCardIcon, "xlink:href", howItWorksMainContentFifthCardDataTable.Icon);
 });
 
+Then(/^check the following data of main content who is eligble section first card is correct$/, async (table) => {
+  const howItWorksMainContentEligibleSectionFirstCardDataTable = await table.rowsHash();
+  await expectText(await _Works.howItWorksMainContentEligibleSectionFirstCardTitleElem, howItWorksMainContentEligibleSectionFirstCardDataTable.Title);
+  await expectText(await _Works.howItWorksMainContentEligibleSectionFirstCardDescElem, howItWorksMainContentEligibleSectionFirstCardDataTable.Description);
+  await expectAttributeToContain(await _Works.howItWorksMainContentEligibleSectionFirstCardPicture, "src", howItWorksMainContentEligibleSectionFirstCardDataTable.Picture);
+  await expectAttributeToContain(await _Works.howItWorksMainContentEligibleSectionFirstCardArrowIcon, "xlink:href", howItWorksMainContentEligibleSectionFirstCardDataTable.ArrowRightIcon);
+});
+
+Then(/^check main content who is eligible section first card button text is correct$/, async (table) => {
+  const howItWorksMainContentEligibleSectionFirstCardButtonDataTable = await table.rowsHash();
+  await expectText(await _Works.howItWorksMainContentEligibleSectionFirstCardBtnText, howItWorksMainContentEligibleSectionFirstCardButtonDataTable.ButtonText);
+});
+
+Then(/^user clicks on Learn more button$/, async (table) => {
+  const howItWorksMainContentEligibleSectionFirstCardButtonDataTable = await table.rowsHash();
+  await clickElement(await _Works.howItWorksHeaderButtonElem(howItWorksMainContentEligibleSectionFirstCardButtonDataTable.Button), true);
+});
+
+Then(/^user is navigated to Quizzard page$/, async (table) => {
+  const howItWorksMainContentEligibleSectionFirstCardButtonDataTable = await table.rowsHash();
+  await clickElement(await _Works.howItWorksHeaderButtonElem(howItWorksMainContentEligibleSectionFirstCardButtonDataTable.Button), true);
+});
+
 
