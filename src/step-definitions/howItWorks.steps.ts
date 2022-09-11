@@ -2,10 +2,13 @@ import { Then, When } from '@cucumber/cucumber';
 import { Context } from '../helpers/context';
 import urls from "../data/urls";
 import { clickElement, getElement, getElementText, getNthElement } from "../helpers/elements";
-import { expectAttributeToContain, expectText, expectToExist, expectURL, expectValue, expectToContain } from "../helpers/validators";
+import { expectAttributeToContain, expectText, expectToExist, expectURL, expectValue, expectToContain, expectEqual } from "../helpers/validators";
 import Works from '../page-objects/works.page';
+import Quizzard from '../page-objects/quizzard.page';
+import { QuizzardData } from '../data/quizzard.data';
 
 const _Works: Works = Context.getInstance().getPage('Works');
+const _Quizzard: Quizzard = Context.getInstance().getPage('Quizzard');
 
 When(/^the How it works page is opened$/, async () => {
   await expectToExist(_Works.howItWorksHeaderTitleElem);
@@ -81,9 +84,60 @@ Then(/^user clicks on Learn more button$/, async (table) => {
   await clickElement(await _Works.howItWorksHeaderButtonElem(howItWorksMainContentEligibleSectionFirstCardButtonDataTable.Button), true);
 });
 
-Then(/^user is navigated to Quizzard page$/, async (table) => {
+Then(/^in eligible section first card user clicks on Learn more button$/, async (table) => {
   const howItWorksMainContentEligibleSectionFirstCardButtonDataTable = await table.rowsHash();
   await clickElement(await _Works.howItWorksHeaderButtonElem(howItWorksMainContentEligibleSectionFirstCardButtonDataTable.Button), true);
+});
+
+Then(/^user from first card is navigated to Quizzard page$/, async () => {
+  await expectText(await _Quizzard.quizzardCardTitleElem, QuizzardData.quizzardFirstQuestionHeaderText);
+  await expectURL(urls.quizLinks.base);
+});
+
+Then(/^check the following data of main content who is eligble section second card is correct$/, async (table) => {
+  const howItWorksMainContentEligibleSectionSecondCardDataTable = await table.rowsHash();
+  await expectText(await _Works.howItWorksMainContentEligibleSectionSecondCardTitleElem, howItWorksMainContentEligibleSectionSecondCardDataTable.Title);
+  await expectText(await _Works.howItWorksMainContentEligibleSectionSecondCardDescElem, howItWorksMainContentEligibleSectionSecondCardDataTable.Description);
+  await expectAttributeToContain(await _Works.howItWorksMainContentEligibleSectionSecondCardPicture, "src", howItWorksMainContentEligibleSectionSecondCardDataTable.Picture);
+  await expectAttributeToContain(await _Works.howItWorksMainContentEligibleSectionSecondCardArrowIcon, "xlink:href", howItWorksMainContentEligibleSectionSecondCardDataTable.ArrowRightIcon);
+});
+
+Then(/^check main content who is eligible section second card button text is correct$/, async (table) => {
+  const howItWorksMainContentEligibleSectionSecondCardButtonDataTable = await table.rowsHash();
+  await expectText(await _Works.howItWorksMainContentEligibleSectionSecondCardBtnText, howItWorksMainContentEligibleSectionSecondCardButtonDataTable.ButtonText);
+});
+
+Then(/^in eligible section second card user clicks on Learn more button$/, async (table) => {
+  const howItWorksMainContentEligibleSectionSecondCardButtonDataTable = await table.rowsHash();
+  await clickElement(await _Works.howItWorksHeaderButtonElem(howItWorksMainContentEligibleSectionSecondCardButtonDataTable.Button), true);
+});
+
+Then(/^user from second card is navigated to Quizzard page$/, async () => {
+  await expectText(await _Quizzard.quizzardCardTitleElem, QuizzardData.quizzardFirstQuestionHeaderText);
+  await expectURL(urls.quizLinks.base);
+});
+
+Then(/^check the following data of main content who is eligble section third card is correct$/, async (table) => {
+  const howItWorksMainContentEligibleSectionThirdCardDataTable = await table.rowsHash();
+  await expectText(await _Works.howItWorksMainContentEligibleSectionThirdCardTitleElem, howItWorksMainContentEligibleSectionThirdCardDataTable.Title);
+  await expectText(await _Works.howItWorksMainContentEligibleSectionThirdCardDescElem, howItWorksMainContentEligibleSectionThirdCardDataTable.Description);
+  await expectAttributeToContain(await _Works.howItWorksMainContentEligibleSectionThirdCardPicture, "src", howItWorksMainContentEligibleSectionThirdCardDataTable.Picture);
+  await expectAttributeToContain(await _Works.howItWorksMainContentEligibleSectionThirdCardArrowIcon, "xlink:href", howItWorksMainContentEligibleSectionThirdCardDataTable.ArrowRightIcon);
+});
+
+Then(/^check main content who is eligible section third card button text is correct$/, async (table) => {
+  const howItWorksMainContentEligibleSectionThirdCardButtonDataTable = await table.rowsHash();
+  await expectText(await _Works.howItWorksMainContentEligibleSectionThirdCardBtnText, howItWorksMainContentEligibleSectionThirdCardButtonDataTable.ButtonText);
+});
+
+Then(/^in eligible section third card user clicks on Learn more button$/, async (table) => {
+  const howItWorksMainContentEligibleSectionThirdCardButtonDataTable = await table.rowsHash();
+  await clickElement(await _Works.howItWorksHeaderButtonElem(howItWorksMainContentEligibleSectionThirdCardButtonDataTable.Button), true);
+});
+
+Then(/^user from third card is navigated to Quizzard page$/, async () => {
+  await expectText(await _Quizzard.quizzardCardTitleElem, QuizzardData.quizzardFirstQuestionHeaderText);
+  await expectURL(urls.quizLinks.base);
 });
 
 

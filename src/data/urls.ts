@@ -28,4 +28,5 @@ export default {
   },
   results: 'results/',
   works:'how-it-works',
+  
 };
