@@ -1,6 +1,6 @@
 Feature: Test for Vision page
 
-  Scenario: Check that breadcrumb text and icons are correct, and breadcrumb links navigate user to correct pages
+  Scenario: Vision breadcrumb text and link navigation testing
     Given the user is on the Vision page
     When the Vision Insurance product page is opened
     And the breadcrumb elements have correct text
@@ -13,7 +13,7 @@ Feature: Test for Vision page
     And user should click on the Offerings link
     Then Offerings page should be opened
 
-  Scenario: Check if offering header and main content part on Vision Insurance page, has elements and the elements are correct and are displayed correctly
+  Scenario: Vision header and main content testing
     Given the user is on the Vision page
     When the Vision Insurance product page is opened
     Then the main Vision title and description should be correct

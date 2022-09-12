@@ -22,9 +22,11 @@ export default {
     vision: 'offerings/606d91a9cf72104f54e0ddd9/606da875d0bbdd8250d531a5',
   },
   quizLinks: {
+    base: 'wizard',
     ACAHealth: 'wizard?productCode=HEALTH%20ACA%20EXCHANGE',
+    vision: 'wizard?productCode=VISION',
   },
-  quiz: 'wizard/',
-  visionQuiz: 'wizard?productCode=VISION',
   results: 'results/',
+  works: 'how-it-works',
+  faq: 'faq',
 };

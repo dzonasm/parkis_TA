@@ -95,7 +95,7 @@ When(/^find your product button for Vision is working$/, async () => {
 
 Then(/^the Quizzard page should be opened$/, async () => {
   await expectText(_Quizzard.quizzardFirstQuestionHeaderText, QuizzardData.quizzardFirstQuestionHeaderText);
-  await expectURL(urls.visionQuiz, true);
+  await expectURL(urls.quizLinks.vision, true);
 });
 
 Then(/^sidebar headline text should be correct$/, async () => {
