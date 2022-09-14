@@ -36,7 +36,7 @@ Feature: Test for Works page
 			| Subtitle | Business Risk                                          |
 			| Icon     | /brighter-assets/icons/green_icons.svg#Briefcase-Green |
 
-	Scenario: View Who is eligible section first cards elements
+	Scenario: View Who is eligible section first card elements
 		Given the user is on the Works page
 		Then check the following data of main content who is eligble section (0) card is correct
 			| Title          | For you                                          |
@@ -48,7 +48,7 @@ Feature: Test for Works page
 	  	And in eligible section (0) card user clicks on Learn more button
 	  	Then user from (0) card is navigated to Quizzard page 
 
-	Scenario: View Who is eligible section second cards elements
+	Scenario: View Who is eligible section second card elements
 		Given the user is on the Works page
 	  	Then check the following data of main content who is eligble section (1) card is correct
 			| Title          |  For your business |
@@ -60,7 +60,7 @@ Feature: Test for Works page
  	  	And in eligible section (1) card user clicks on Learn more button
       	Then user from (1) card is navigated to Quizzard page 
 
-	Scenario: View Who is eligible section third cards elements
+	Scenario: View Who is eligible section third card elements
 		Given the user is on the Works page
 	  	Then check the following data of main content who is eligble section (2) card is correct
 			| Title          | Additional items to consider                    |
