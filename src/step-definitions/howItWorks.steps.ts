@@ -3,11 +3,11 @@ import { Context } from '../helpers/context';
 import urls from "../data/urls";
 import { clickElement } from "../helpers/elements";
 import { expectAttributeToContain, expectText, expectToExist, expectURL } from "../helpers/validators";
-import Works from '../page-objects/howItWorks.page';
+import howItWorks from '../page-objects/howItWorks.page';
 import Quizzard from '../page-objects/quizzard.page';
 import { QuizzardData } from '../data/quizzard.data';
 
-const _Works: Works = Context.getInstance().getPage('Works');
+const _Works: howItWorks = Context.getInstance().getPage('howItWorks');
 const _Quizzard: Quizzard = Context.getInstance().getPage('Quizzard');
 
 When(/^the How it works page is opened$/, async () => {
@@ -43,7 +43,7 @@ Then(/^check the following data of main content \((\d+)\) card is correct$/, asy
   await expectAttributeToContain(ourOfferingsItem.icon, "xlink:href", howItWorksMainContentFifthCardDataTable.Icon);
 });
 
-Then(/^check the following data of main content who is eligble section \((\d+)\) card is correct$/, async (nth, table) => {
+Then(/^check the following data of main content who is eligible section \((\d+)\) card is correct$/, async (nth, table) => {
   const howItWorksMainContentEligibleSectionFirstCardDataTable = await table.rowsHash();
   const cardItem = await _Works.getCardItemDetails(nth);
   await expectText(cardItem.title, howItWorksMainContentEligibleSectionFirstCardDataTable.Title);
@@ -54,12 +54,12 @@ Then(/^check the following data of main content who is eligble section \((\d+)\)
 
 Then(/^check main content who is eligible section \((\d+)\) card button text is correct$/, async (nth, table) => {
   const howItWorksMainContentEligibleSectionFirstCardButtonDataTable = await table.rowsHash();
-  const cardItem = await _Works.getCardItemDetails(nth);
+  const cardItem = await _Works.getButtonText(nth);
   await expectText(cardItem.buttonText, howItWorksMainContentEligibleSectionFirstCardButtonDataTable.ButtonText);
 });
 
 Then(/^in eligible section \((\d+)\) card user clicks on Learn more button$/, async (nth) => {
-  const cardItem = await _Works.getCardItemDetails(nth);
+  const cardItem = await _Works.clickBtn(nth);
   await clickElement(cardItem.button, true);
 });
 

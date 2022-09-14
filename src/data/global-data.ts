@@ -38,5 +38,5 @@ export const ContextPages = {
   /* Offerings */
   Offerings: ['offerings'],
 
-  Works: ['howItWorks'],
+  howItWorks: ['howItWorks'],
 };

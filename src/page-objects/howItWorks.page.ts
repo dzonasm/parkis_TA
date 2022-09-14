@@ -60,4 +60,18 @@ export default class works extends Page {
             button: await getNthElement('[ta-id="eligibility-card_924285199"]', nth),
         };
     }
+
+    async getButtonText(nth) {
+        return {
+            buttonText: await getNthElement('[ta-id="eligibility-card_866260170"]', nth),
+        };
+    }
+
+    async clickBtn(nth) {
+        return {
+            button: await getNthElement('[ta-id="eligibility-card_924285199"]', nth),
+        };
+    }
+    
+
 }
