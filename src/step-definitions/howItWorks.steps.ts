@@ -2,8 +2,8 @@ import { Then, When } from '@cucumber/cucumber';
 import { Context } from '../helpers/context';
 import urls from "../data/urls";
 import { clickElement } from "../helpers/elements";
-import { expectAttributeToContain, expectText, expectToExist, expectURL, expectValue, expectToContain, expectEqual } from "../helpers/validators";
-import Works from '../page-objects/works.page';
+import { expectAttributeToContain, expectText, expectToExist, expectURL } from "../helpers/validators";
+import Works from '../page-objects/howItWorks.page';
 import Quizzard from '../page-objects/quizzard.page';
 import { QuizzardData } from '../data/quizzard.data';
 
