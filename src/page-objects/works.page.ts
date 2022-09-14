@@ -1,5 +1,5 @@
 import urls from '../data/urls';
-import { clickElement, getElement, getElementText, getNthElement } from '../helpers/elements';
+import { getElement, getNthElement } from '../helpers/elements';
 
 import { Page } from './page';
 
@@ -39,117 +39,25 @@ export default class works extends Page {
         return getElement('[ta-id="how-it-works_529035000"]');
     }
 
-    get howItWorksMainContentFirstCardSubtileElem() {
-        return getElement('mercer-app-how-it-works > div > div:nth-child(3) > div > div.mos-u-color-bg--white.p-sm-5.md-p-md-3 > div:nth-child(3) > div > div > div > div:nth-child(1) > p');
-    }
-
-    get howItWorksMainContentFirstCardIcon() {
-        return getElement('body > mercer-app > mercer-app-page-container > main > mercer-app-how-it-works > div > div:nth-child(3) > div > div.mos-u-color-bg--white.p-sm-5.md-p-md-3 > div:nth-child(3) > div > div > div > div:nth-child(1) > brighter-shape > div > brighter-icon > svg > use');
-    }
-
-    get howItWorksMainContentSecondCardSubtileElem() {
-        return getElement('body > mercer-app > mercer-app-page-container > main > mercer-app-how-it-works > div > div:nth-child(3) > div > div.mos-u-color-bg--white.p-sm-5.md-p-md-3 > div:nth-child(3) > div > div > div > div:nth-child(2) > p');
-    }
-
-    get howItWorksMainContentSecondCardIcon() {
-        return getElement('body > mercer-app > mercer-app-page-container > main > mercer-app-how-it-works > div > div:nth-child(3) > div > div.mos-u-color-bg--white.p-sm-5.md-p-md-3 > div:nth-child(3) > div > div > div > div:nth-child(2) > brighter-shape > div > brighter-icon > svg > use');
-    }
-
-    get howItWorksMainContentThirdCardSubtileElem() {
-        return getElement('body > mercer-app > mercer-app-page-container > main > mercer-app-how-it-works > div > div:nth-child(3) > div > div.mos-u-color-bg--white.p-sm-5.md-p-md-3 > div:nth-child(3) > div > div > div > div:nth-child(3) > p');
-    }
-
-    get howItWorksMainContentThirdCardIcon() {
-        return getElement('body > mercer-app > mercer-app-page-container > main > mercer-app-how-it-works > div > div:nth-child(3) > div > div.mos-u-color-bg--white.p-sm-5.md-p-md-3 > div:nth-child(3) > div > div > div > div:nth-child(3) > brighter-shape > div > brighter-icon > svg > use');
-    }
-
-    get howItWorksMainContentFourthCardSubtileElem() {
-        return getElement('body > mercer-app > mercer-app-page-container > main > mercer-app-how-it-works > div > div:nth-child(3) > div > div.mos-u-color-bg--white.p-sm-5.md-p-md-3 > div:nth-child(3) > div > div > div > div:nth-child(4) > p');
-    }
-
-    get howItWorksMainContentFourthCardIcon() {
-        return getElement('body > mercer-app > mercer-app-page-container > main > mercer-app-how-it-works > div > div:nth-child(3) > div > div.mos-u-color-bg--white.p-sm-5.md-p-md-3 > div:nth-child(3) > div > div > div > div:nth-child(4) > brighter-shape > div > brighter-icon > svg > use');
-    }
-
-    get howItWorksMainContentFifthCardSubtileElem() {
-        return getElement('body > mercer-app > mercer-app-page-container > main > mercer-app-how-it-works > div > div:nth-child(3) > div > div.mos-u-color-bg--white.p-sm-5.md-p-md-3 > div:nth-child(3) > div > div > div > div:nth-child(5) > p');
-    }
-
-    get howItWorksMainContentFifthCardIcon() {
-        return getElement('body > mercer-app > mercer-app-page-container > main > mercer-app-how-it-works > div > div:nth-child(3) > div > div.mos-u-color-bg--white.p-sm-5.md-p-md-3 > div:nth-child(3) > div > div > div > div:nth-child(5) > brighter-shape > div > brighter-icon > svg > use');
-    }
-
-    get howItWorksMainContentEligibleSectionFirstCardTitleElem() {
-        return getElement('body > mercer-app > mercer-app-page-container > main > mercer-app-how-it-works > div > div:nth-child(3) > div > div.eligibility-background.ng-star-inserted > div > div > div.small-12.pl-md.lg-pl-0.md-pr-md > mercer-app-eligibility-card > div > div:nth-child(1) > brighter-card > div > div.brighter-card__content.ng-star-inserted > brighter-card-content > div.pt-sm-5.mos-u-equalizer > h1');
-    }
-
-    get howItWorksMainContentEligibleSectionFirstCardDescElem() {
-        return getElement('body > mercer-app > mercer-app-page-container > main > mercer-app-how-it-works > div > div:nth-child(3) > div > div.eligibility-background.ng-star-inserted > div > div > div.small-12.pl-md.lg-pl-0.md-pr-md > mercer-app-eligibility-card > div > div:nth-child(1) > brighter-card > div > div.brighter-card__content.ng-star-inserted > brighter-card-content > div.footer.mos-u-equalizer > p');
-    }
-
-    get howItWorksMainContentEligibleSectionFirstCardPicture() {
-        return getElement('body > mercer-app > mercer-app-page-container > main > mercer-app-how-it-works > div > div:nth-child(3) > div > div.eligibility-background.ng-star-inserted > div > div > div.small-12.pl-md.lg-pl-0.md-pr-md > mercer-app-eligibility-card > div > div:nth-child(1) > brighter-card > div > div.brighter-card__header.ng-star-inserted > brighter-card-header > div > img');
-    }
-
-    get howItWorksMainContentEligibleSectionFirstCardArrowIcon() {
-        return getElement('body > mercer-app > mercer-app-page-container > main > mercer-app-how-it-works > div > div:nth-child(3) > div > div.eligibility-background.ng-star-inserted > div > div > div.small-12.pl-md.lg-pl-0.md-pr-md > mercer-app-eligibility-card > div > div:nth-child(1) > brighter-card > div > div.brighter-card__content.ng-star-inserted > brighter-card-content > div.footer.mos-u-equalizer > div > button > div > span > brighter-icon > svg > use');
-    }
-
-    get howItWorksMainContentEligibleSectionFirstCardBtnText() {
-        return getElement('[ta-id="eligibility-card_866260170"]');
-    }
-   
     async howItWorksHeaderVideoElem(selector) {
         return getElement(selector)
     }
 
-    async howItWorksHeaderButtonElem(selector) {
-        return getElement(selector)
+    async getOurOfferingsItemDetails(nth) {
+        return {
+            title: await getNthElement('[ta-id="how-it-works_546204597"]', nth),
+            icon: await getNthElement('brighter-shape > div > brighter-icon > svg > use', nth),
+        };
     }
 
-    async quizzardPageUrl(selector) {
-        return getElement(selector)
+    async getCardItemDetails(nth) {
+        return {
+            title: await getNthElement('[ta-id="eligibility-card_959657693"] brighter-card > div > div.brighter-card__content.ng-star-inserted > brighter-card-content > div.pt-sm-5.mos-u-equalizer > h1', nth),
+            description: await getNthElement('[ta-id="eligibility-card_85433124"]', nth),
+            picture: await getNthElement('[ta-id="eligibility-card_959657693"] brighter-card-header > div > img', nth),
+            icon: await getNthElement('[ta-id="eligibility-card_959657693"] brighter-icon > svg > use', nth),
+            buttonText: await getNthElement('[ta-id="eligibility-card_866260170"]', nth),
+            button: await getNthElement('[ta-id="eligibility-card_924285199"]', nth),
+        };
     }
-
-    get howItWorksMainContentEligibleSectionSecondCardTitleElem() {
-        return getElement('body > mercer-app > mercer-app-page-container > main > mercer-app-how-it-works > div > div:nth-child(3) > div > div.eligibility-background.ng-star-inserted > div > div > div.small-12.pl-md.lg-pl-0.md-pr-md > mercer-app-eligibility-card > div > div:nth-child(2) > brighter-card > div > div.brighter-card__content.ng-star-inserted > brighter-card-content > div.pt-sm-5.mos-u-equalizer > h1');
-    }                      
-
-    get howItWorksMainContentEligibleSectionSecondCardDescElem() {
-        return getElement('body > mercer-app > mercer-app-page-container > main > mercer-app-how-it-works > div > div:nth-child(3) > div > div.eligibility-background.ng-star-inserted > div > div > div.small-12.pl-md.lg-pl-0.md-pr-md > mercer-app-eligibility-card > div > div:nth-child(2) > brighter-card > div > div.brighter-card__content.ng-star-inserted > brighter-card-content > div.footer.mos-u-equalizer > p');
-    }
-
-    get howItWorksMainContentEligibleSectionSecondCardPicture() {
-        return getElement('body > mercer-app > mercer-app-page-container > main > mercer-app-how-it-works > div > div:nth-child(3) > div > div.eligibility-background.ng-star-inserted > div > div > div.small-12.pl-md.lg-pl-0.md-pr-md > mercer-app-eligibility-card > div > div:nth-child(2) > brighter-card > div > div.brighter-card__header.ng-star-inserted > brighter-card-header > div > img');
-    }
-
-    get howItWorksMainContentEligibleSectionSecondCardArrowIcon() {
-        return getElement('body > mercer-app > mercer-app-page-container > main > mercer-app-how-it-works > div > div:nth-child(3) > div > div.eligibility-background.ng-star-inserted > div > div > div.small-12.pl-md.lg-pl-0.md-pr-md > mercer-app-eligibility-card > div > div:nth-child(2) > brighter-card > div > div.brighter-card__content.ng-star-inserted > brighter-card-content > div.footer.mos-u-equalizer > div > button > div > span > brighter-icon > svg > use');
-    }
-
-    get howItWorksMainContentEligibleSectionSecondCardBtnText() {
-        return getElement('body > mercer-app > mercer-app-page-container > main > mercer-app-how-it-works > div > div:nth-child(3) > div > div.eligibility-background.ng-star-inserted > div > div > div.small-12.pl-md.lg-pl-0.md-pr-md > mercer-app-eligibility-card > div > div:nth-child(2) > brighter-card > div > div.brighter-card__content.ng-star-inserted > brighter-card-content > div.footer.mos-u-equalizer > div > button > div > span > span');
-    }
-
-    get howItWorksMainContentEligibleSectionThirdCardTitleElem() {
-        return getElement('body > mercer-app > mercer-app-page-container > main > mercer-app-how-it-works > div > div:nth-child(3) > div > div.eligibility-background.ng-star-inserted > div > div > div.small-12.pl-md.lg-pl-0.md-pr-md > mercer-app-eligibility-card > div > div:nth-child(3) > brighter-card > div > div.brighter-card__content.ng-star-inserted > brighter-card-content > div.pt-sm-5.mos-u-equalizer > h1');
-    }                      
-
-    get howItWorksMainContentEligibleSectionThirdCardDescElem() {
-        return getElement('body > mercer-app > mercer-app-page-container > main > mercer-app-how-it-works > div > div:nth-child(3) > div > div.eligibility-background.ng-star-inserted > div > div > div.small-12.pl-md.lg-pl-0.md-pr-md > mercer-app-eligibility-card > div > div:nth-child(3) > brighter-card > div > div.brighter-card__content.ng-star-inserted > brighter-card-content > div.footer.mos-u-equalizer > p');
-    }
-
-    get howItWorksMainContentEligibleSectionThirdCardPicture() {
-        return getElement('body > mercer-app > mercer-app-page-container > main > mercer-app-how-it-works > div > div:nth-child(3) > div > div.eligibility-background.ng-star-inserted > div > div > div.small-12.pl-md.lg-pl-0.md-pr-md > mercer-app-eligibility-card > div > div:nth-child(3) > brighter-card > div > div.brighter-card__header.ng-star-inserted > brighter-card-header > div > img');
-    }
-
-    get howItWorksMainContentEligibleSectionThirdCardArrowIcon() {
-        return getElement('body > mercer-app > mercer-app-page-container > main > mercer-app-how-it-works > div > div:nth-child(3) > div > div.eligibility-background.ng-star-inserted > div > div > div.small-12.pl-md.lg-pl-0.md-pr-md > mercer-app-eligibility-card > div > div:nth-child(3) > brighter-card > div > div.brighter-card__content.ng-star-inserted > brighter-card-content > div.footer.mos-u-equalizer > div > button > div > span > brighter-icon > svg > use');
-    }
-
-    get howItWorksMainContentEligibleSectionThirdCardBtnText() {
-        return getElement('body > mercer-app > mercer-app-page-container > main > mercer-app-how-it-works > div > div:nth-child(3) > div > div.eligibility-background.ng-star-inserted > div > div > div.small-12.pl-md.lg-pl-0.md-pr-md > mercer-app-eligibility-card > div > div:nth-child(3) > brighter-card > div > div.brighter-card__content.ng-star-inserted > brighter-card-content > div.footer.mos-u-equalizer > div > button > div > span > span');
-    }
-
-
 }

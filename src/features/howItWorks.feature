@@ -20,60 +20,56 @@ Feature: Test for Works page
 		Then main content title and description should be correct
 			| Title       |  Our offerings                     |
 			| Description |   We connect you with a comprehensive suite of benefits including health, life, business coverages, auto, dental, vision, and a variety of liability and security products.                      |
-	  	Then check the following data of main content first card is correct
+	  	Then check the following data of main content (0) card is correct
 			| Subtitle | Healthcare                                             |
 			| Icon     | /brighter-assets/icons/green_icons.svg#First-Aid-Green |
-	  	Then check the following data of main content second card is correct
+	  	Then check the following data of main content (1) card is correct
 			| Subtitle | Auto                                                   |
 			| Icon     | /brighter-assets/icons/green_icons.svg#Car-Green       |
-	  	Then check the following data of main content third card is correct
+	  	Then check the following data of main content (2) card is correct
 			| Subtitle | Home                                                   |
 			| Icon     | /brighter-assets/icons/green_icons.svg#House-Green     |
-	  	Then check the following data of main content fourth card is correct
+	  	Then check the following data of main content (3) card is correct
 			| Subtitle | Life                                                   |
 			| Icon     | /brighter-assets/icons/green_icons.svg#Flower-Green    | 
-	  	Then check the following data of main content fifth card is correct
+	  	Then check the following data of main content (4) card is correct
 			| Subtitle | Business Risk                                          |
 			| Icon     | /brighter-assets/icons/green_icons.svg#Briefcase-Green |
-	
+
 	Scenario: View Who is eligible section first cards elements
 		Given the user is on the Works page
-		Then check the following data of main content who is eligble section first card is correct
+		Then check the following data of main content who is eligble section (0) card is correct
 			| Title          | For you                                          |
 			| Description    | Whether you’re an independent worker or small business owner, the lifestyle and independence you’ve earned is to be celebrated. What you may be missing is access to employer-sponsored benefits - and now, Mercer Indigo can connect you with the right individual insurance options. |
 			| Picture        | /assets/images/benefits/01.png                   |
-			| ArrowRightIcon | /brighter-assets/icons/legacy_mosui_icons.svg#keyboard_arrow_right    |
-	  	And check main content who is eligible section first card button text is correct
+		    | ArrowRightIcon | /brighter-assets/icons/legacy_mosui_icons.svg#keyboard_arrow_right    |
+	  	And check main content who is eligible section (0) card button text is correct
 			| ButtonText     | Learn more                                       |
-	  	And in eligible section first card user clicks on Learn more button
-			| Button         | [ta-id="eligibility-card_924285199"]             |
-	  	Then user from first card is navigated to Quizzard page 
+	  	And in eligible section (0) card user clicks on Learn more button
+	  	Then user from (0) card is navigated to Quizzard page 
 
 	Scenario: View Who is eligible section second cards elements
 		Given the user is on the Works page
-	  	Then check the following data of main content who is eligble section second card is correct
+	  	Then check the following data of main content who is eligble section (1) card is correct
 			| Title          |  For your business |
 			| Description    | As a business owner, you have enough on your shoulders. Whether you have a small business with employees or are a sole proprietor, your business needs the right level of protection. Mercer Indigo has a suite of insurance products to reduce your business risks. |
-			| Picture        | /assets/images/benefits/02.png                   |
-			| ArrowRightIcon | /brighter-assets/icons/legacy_mosui_icons.svg#keyboard_arrow_right    |
-	  	And check main content who is eligible section second card button text is correct
+	 		| Picture        | /assets/images/benefits/02.png                   |
+		    | ArrowRightIcon | /brighter-assets/icons/legacy_mosui_icons.svg#keyboard_arrow_right    |
+	  	And check main content who is eligible section (1) card button text is correct
  			| ButtonText     |  Learn more                                      |
- 	  	And in eligible section second card user clicks on Learn more button
-	    	| Button         | body > mercer-app > mercer-app-page-container > main > mercer-app-how-it-works > div > div:nth-child(3) > div > div.eligibility-background.ng-star-inserted > div > div > div.small-12.pl-md.lg-pl-0.md-pr-md > mercer-app-eligibility-card > div > div:nth-child(2) > brighter-card > div > div.brighter-card__content.ng-star-inserted > brighter-card-content > div.footer.mos-u-equalizer > div > button > div               |
-      	Then user from second card is navigated to Quizzard page 
-
+ 	  	And in eligible section (1) card user clicks on Learn more button
+      	Then user from (1) card is navigated to Quizzard page 
 
 	Scenario: View Who is eligible section third cards elements
 		Given the user is on the Works page
-	  	Then check the following data of main content who is eligble section third card is correct
+	  	Then check the following data of main content who is eligble section (2) card is correct
 			| Title          | Additional items to consider                    |
 			| Description    | You, your family, and your business all have unique needs that may require extra protection. There are a variety of comprehensive and supplementary products to suit a range of specific personal and business situations - discover which plans suit your needs. |
-			| Picture        | /assets/images/benefits/03.png                   |
-			| ArrowRightIcon | /brighter-assets/icons/legacy_mosui_icons.svg#keyboard_arrow_right    |
-	  	And check main content who is eligible section third card button text is correct
+	 		| Picture        | /assets/images/benefits/03.png                   |
+	 		| ArrowRightIcon | /brighter-assets/icons/legacy_mosui_icons.svg#keyboard_arrow_right    |
+	  	And check main content who is eligible section (2) card button text is correct
         	| ButtonText     | Learn more                                       |
-      	And in eligible section third card user clicks on Learn more button
-			| Button         | body > mercer-app > mercer-app-page-container > main > mercer-app-how-it-works > div > div:nth-child(3) > div > div.eligibility-background.ng-star-inserted > div > div > div.small-12.pl-md.lg-pl-0.md-pr-md > mercer-app-eligibility-card > div > div:nth-child(3) > brighter-card > div > div.brighter-card__content.ng-star-inserted > brighter-card-content > div.footer.mos-u-equalizer > div > button > div          |
-      	Then user from third card is navigated to Quizzard page 
+       	And in eligible section (2) card user clicks on Learn more button
+      	Then user from (2) card is navigated to Quizzard page 
 
    

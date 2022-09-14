@@ -1,15 +1,15 @@
 Feature: Test for Dental page
 
-  Scenario: View Dental header elements 
-    Given the user is on the Dental page
-    Then the Dental title, description and picture should be correct
-    And user can see breadcrumb Offerings link
-    And user can see breadcrumb Healthcare link
-    And user clicks on Offerings breadcrumb link
-    Then user is navigated to Offerings page
-    Then user should return to Dental page
-    And user clicks on Healtcare breadcrumb link
-    Then user is navigated to Healtcare page
+  # Scenario: View Dental header elements 
+  #   Given the user is on the Dental page
+  #   Then the Dental title, description and picture should be correct
+  #   And user can see breadcrumb Offerings link
+  #   And user can see breadcrumb Healthcare link
+  #   And user clicks on Offerings breadcrumb link
+  #   Then user is navigated to Offerings page
+  #   Then user should return to Dental page
+  #   And user clicks on Healtcare breadcrumb link
+  #   Then user is navigated to Healtcare page
 
   # Scenario: User can go to Quizzard page from Dental page and from Quizzard page go back to the previuosly page
   #   Given the user is on the Dental page
