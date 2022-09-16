@@ -1,5 +1,9 @@
 export const FaqData = {
-    faqMainHeadlineTitleText: 'Frequently asked questions',
-    faqMainContentHeaderText: 'Mercer IndigoSM is an integrated benefits platform tailored for non-traditional workers.',
-    faqMainContentDescText: 'We’re changing how non-traditional workers get the most out of their benefits for a brighter future. Independent workers and small business owners are leading the way in non-traditional work but are not eligible for employer-sponsored total rewards programs. All workers deserve the opportunity to access benefit options to cover themselves, their families, their employees, and their businesses.'
+    faqAccordionCardIconElementsID: 'div.brighter-accordion-item__header__content > brighter-icon > svg > use',
+    faqAccordionExpansionIconElementsID: 'div.brighter-accordion-item__toggle.ng-star-inserted > brighter-accordion-item-toggle > brighter-icon > svg > use',
+    faqAccordionTitleElementsID: '[ta-id="faq_201393979"]',
+    faqAccordionDescElementsID: '[ta-id="faq_166895400"]',
+    faqAccordionItemElementsID: '[ta-id="faq_217190828"]',
+    faqAccordionCardIconNamingAddon: '/brighter-assets/icons/green_icons.svg#',
+    faqAccordionExpansionIconNamingAddon: '/brighter-assets/icons/action_icons.svg#',
 };
