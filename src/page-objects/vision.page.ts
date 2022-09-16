@@ -6,7 +6,7 @@ import { expectAttributeToContain, expectText, expectToExist, expectURL } from '
 import { Page } from './page';
 
 
-export default class Vision extends Page {
+export default class vision extends Page {
   open() {
     return super.open(urls.healthcareProducts.vision);
   }
