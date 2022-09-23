@@ -28,5 +28,8 @@ export default {
   },
   results: 'results/',
   works: 'how-it-works',
-  faq: 'faq',
+  footerLinks: {
+    faq: 'faq',
+    privacyPolicy: 'privacy-policy',
+  },
 };
