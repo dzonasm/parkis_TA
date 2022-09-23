@@ -6,7 +6,7 @@ import { Page } from './page';
 
 export default class faq extends Page {
     open() {
-        return super.open(urls.faq);
+        return super.open(urls.footerLinks.faq);
     }
 
     async getAccordionItemsDetails(nth) {

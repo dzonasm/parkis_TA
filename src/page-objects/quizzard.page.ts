@@ -8,7 +8,7 @@ import { Page } from './page';
 
 export default class quizzard extends Page {
   open() {
-    return super.open(urls.quizLinks.Vision);
+    return super.open(urls.quizLinks.vision);
   }
 
   get quizzardFirstQuestionHeaderText() {
@@ -28,7 +28,7 @@ export default class quizzard extends Page {
   }
 
   async validateVisionUrl() {
-    await expectURL(urls.quizLinks.Vision);
+    await expectURL(urls.quizLinks.vision);
   }
 
   async validateQuizzardFirstQuestionHeaderText() {
