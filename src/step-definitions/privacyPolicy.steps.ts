@@ -31,12 +31,6 @@ Then(/^date under Privacy Policy title is correct$/, async () => {
 
 Then(/^Privacy Policy content text is correct$/, async () => {
     await expectToExist(Page.privacyMainContentElem);
-    const expectedContent = readFileSync(join(__dirname, 'content-text.txt'), 'utf-8');
+    const expectedContent = readFileSync(join(__dirname, '../data/privacyPolicyMainContentText.txt'), 'utf-8');
     await expectText(Page.privacyMainContentElem, expectedContent);
-    console.log("SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS");
-    const content = await Page.privacyMainContentElem;
-    console.log(await content.getText());
-    writeFileSync(join(__dirname, "./content-text.txt"), await content.getText(), {
-         flag: 'w',
-       });
 });
