@@ -1,5 +1,5 @@
 import urls from '../data/urls';
-import { getElement, getElementText, getNthElement } from '../helpers/elements';
+import { getElement, getElementText } from '../helpers/elements';
 
 import { Page } from './page';
 
@@ -11,11 +11,7 @@ export default class termsOfUse extends Page {
     get termsOfUseMainContentTitleElem() {
         return getElement('[ta-id="terms-of-use_771962981"]');
     }
-    
-    get tekstas(){
-        return getElementText('[ta-id="terms-of-use_167470060"]');
-    }
-
+   
     get termsOfUseMainContentIcon() {
         return getElement('mercer-app-terms-of-use > div > div > div > div > div.row > div.column.shrink > brighter-icon > svg > use');
       }
@@ -27,7 +23,4 @@ export default class termsOfUse extends Page {
     get termsOfUseMainContentElem () {
         return getElement('[ta-id="terms-of-use_167470060"]');
     }
-
-    
-
 }

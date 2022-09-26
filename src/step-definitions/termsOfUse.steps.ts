@@ -7,7 +7,6 @@ import { Data } from "../data/termsOfUse.data";
 import { readFileSync, writeFileSync, promises as fsPromises } from 'fs';
 import { join } from 'path';
 
-
 const TermsOfUse: termsOfUse = Context.getInstance().getPage('termsOfUse');
 
 When(/^the Terms Of Use page is opened$/, async () => {
@@ -31,11 +30,4 @@ Then(/^Terms Of Use content text is correct$/, async () => {
     await expectToExist(TermsOfUse.termsOfUseMainContentElem);
     const expectedContent = readFileSync(join(__dirname, '../data/termsOfUseContent-text.txt'), 'utf-8');
     await expectText(TermsOfUse.termsOfUseMainContentElem, expectedContent);
-    // console.log("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA");
-    // console.log(await TermsOfUse.tekstas);
-    // const tekstas = await TermsOfUse.termsOfUseMainContentElem;
-    // writeFileSync(join(__dirname, "../data/termsOfUseContent-text.txt"), await tekstas.getText(), {
-    //     flag: 'w',
-    //   });
-
 });
