@@ -31,5 +31,6 @@ export default {
   footerLinks: {
     faq: 'faq',
     privacyPolicy: 'privacy-policy',
+    termsOfUse: 'terms-of-use',
   },
 };

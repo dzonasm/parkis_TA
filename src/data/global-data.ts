@@ -38,8 +38,9 @@ export const ContextPages = {
   /* Offerings */
   Offerings: ['offerings'],
   
+  /* Informational Pages */
   Faq: ['faq'],
   howItWorks: ['howItWorks'],
-
   PrivacyPolicy: ['privacyPolicy'],
+  termsOfUse: ['termsOfUse'],
 };
