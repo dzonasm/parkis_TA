@@ -40,4 +40,5 @@ export const ContextPages = {
   
   Faq: ['faq'],
   howItWorks: ['howItWorks'],
+  termsOfUse: ['termsOfUse'],
 };
