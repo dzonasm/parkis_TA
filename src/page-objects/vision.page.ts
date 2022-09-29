@@ -1,7 +1,6 @@
-import { VisionData } from '../data/vision.data';
 import urls from '../data/urls';
-import { clickElement, getElement, getElementText } from '../helpers/elements';
-import { expectAttributeToContain, expectText, expectToExist, expectURL } from '../helpers/validators';
+import { getElement } from '../helpers/elements';
+import { expectURL } from '../helpers/validators';
 
 import { Page } from './page';
 

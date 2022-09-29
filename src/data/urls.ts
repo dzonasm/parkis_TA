@@ -32,6 +32,5 @@ export default {
     faq: 'faq',
     privacyPolicy: 'privacy-policy',
     termsOfUse: 'terms-of-use',
-  }
- 
+  },
 };

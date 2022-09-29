@@ -1,0 +1,190 @@
+Mercer Health & Benefits LLC (“Mercer” or the “Company”) believes strongly in protecting your privacy. This Privacy Notice applies to your use of the Mercer Indigo™ website and online and/or mobile service of Mercer (“Mercer Indigo” or “the Site”). This Privacy Notice applies solely to data collected via the Site and is intended to inform you of the ways in which we collect personal information, the uses to which that information is put, how and why we share that information, and the ways in which we protect it. Personal information is information that can be used to identify you or your activities on the Site or information about you which you provide to us through services offered on the Site.
+The Privacy Notice is subject to change at any time. It was last updated on March 2, 2021. We recommend that you review this Privacy Notice regularly for changes.
+What Data Do We Collect?
+MercerIndigoSM is a proprietary benefits solution platform designed for independent workers which provides access to a suite of preconfigured individual and small group health, welfare and business insurance and non-insurance solutions.
+The information we process via this Site is information provided by you voluntarily or involuntarily when you navigate through the Site.
+Information Voluntarily Collected from You:
+Generally, we may collect information to assess your insurance needs, including the the following information should you provide it to us voluntarily:
+contact information such as name, address, email address, and phone number;
+demographic information such as date of birth, marital status, and dependents; and
+employment information.
+Information Provided by You Voluntarily or Involuntarily:
+As you navigate through the Site we will collect data related to your use of the Site such as:
+login information such as your email address and password;
+records of, or relating to your general geographic location, your device’s operating system, the pages you view and how often;
+information about communications and other interactions between you and us about the Services; and
+information about your transactions with third parties, including the third party providers you access through the Services. 
+In addition, in the course of ensuring network security and consistent service for all users, we employ software programs to do such things as monitor network traffic, identify unauthorized access or access to nonpublic information, detect computer viruses and other software that might damage MMB’s computers or the network, and monitor and fine-tune the performance of our network and this Site. In the course of such monitoring, these programs may detect additional information from your computer such as your IP address, addresses from network packets, and other technical information. Any such information is used only for the purpose of maintaining the security and performance of the Company’s networks and computer systems.
+How Do We Use the Data We Collect?
+We will use the information provided by you to provide services to you, which may include assessments of your insurance needs. We use various tools to enhance the Site user experience and track users of the Site, including cookies and web beacons. We use this information to maintain and improve the Site.
+Who Do We Share Your Data With?
+We will not disclose, share, sell, or otherwise use your personal information without your consent, except to the extent required by law, in accordance with your instructions, or as identified in this Privacy Notice:
+Affiliates: To enable them to provide services to you and to enable them to contact you regarding additional products and services.
+Agents and Service Providers: We sometimes contract with other companies and individuals to perform functions or services for us or on our behalf, such as hosting this Site, sending e-mail messages, and making phone calls. They may have access to personal information, such as addresses, needed to perform their functions, but are contractually restricted from using it for purposes other than providing services for the Company or on our behalf. We may share information with Service Providers with whom you are applying for insurance or other products and services.
+Business Transfers: As we continue to develop our business, we might sell or buy assets. In such transactions, user information generally is one of the transferred business assets. Also, if either the Company itself or any of the Company’s assets were acquired (including through bankruptcy proceedings), your personal information may be one of the transferred assets.
+Legal Matters: The Company may preserve, and has the right to disclose any information about you or your use of this Site without your prior permission if the Company has a good faith belief that such action is necessary to: (a) protect and defend the rights, property, or safety of the Company or its affiliates, other users of this Site, or the public; (b) enforce the terms and conditions that apply to use of this Site; (c) respond to claims that any content violates the rights of third parties; (d) respond to claims of suspected or actual illegal activity; (e) respond to an audit or investigate a complaint or security threat; or (f) comply with applicable law, regulation, legal process, or governmental requests.
+Online Cookies: We do not sell personal information. As we explain in our [hyperlink: Cookie Notice], we and our third party partners use cookies and other tracking technologies to analyze website traffic and facilitate marketing or advertising. You can learn more about the cookies utilized on this Site and opt out of our and our third party partners’ use of certain cookies using our [hyperlink: Cookie Management tool].
+Program Sponsor: To your employer, association or benefit program sponsor to provide products or services as requested by you, your employer, association sponsor, or benefit program sponsor.
+What Steps Do We Take to Protect Your Information?
+This Site and all information that you submit through this Site is collected, stored, and processed regionally within Company-controlled databases. We restrict access to your personal information to those employees of ours, and our affiliates, and to those service providers who need to use it to provide this Site and our products or services. We have implemented physical, administrative, and technical safeguards to protect your personal information from unauthorized access. However, as effective as our security measures are, no security system is impenetrable. We cannot guarantee the security of our systems, nor can we guarantee that information you supply will not be intercepted while being transmitted to us over the Internet.
+Some Other Matters
+Accessing and Correcting Your Information: Keeping your information accurate and up-to-date is very important. Inaccurate or incomplete information could impact our ability to deliver relevant services to you. Please let us know about any changes that may be required to your personal information using the “contact us” feature of this website.
+External Links: This Site includes links to other sites that are operated by organizations other than the Company. If you access another organization’s website using a link provided, the other organization may collect information from you.  The Company is not responsible for the content or privacy practices of linked websites or their use.  Once you have left this Site via such a link (you can tell where you are by checking the URL in the location bar on your browser), you should refer to those websites' privacy policies, terms of use, and practices to determine how they will handle any information they collect from you.
+Applicability of This Privacy Notice to International Users: This Privacy Notice is provided in accordance with and subject to U.S. law. If you access this Site from a location outside of the United States, you agree that your use of this Site is subject to the terms of this Privacy Notice and the Terms of Use and you recognize and accept that your personal information may be transferred to and processed in the U.S. and other countries that may not be deemed to provide the same level of data protection as your home country and that may have been deemed to have inadequate data privacy laws under the laws of your jurisdiction.
+Children: This Site it not intended for children, and we do not knowingly collect, use, or disclose information of children under the age of thirteen (13) without the consent of their parents or legal guardians. In an instance where such information was collected, it would be purely accidental and unintentional.
+Questions or Concerns?
+If you have any questions, concerns, or complaints about this Privacy Notice, or our privacy practices in general, they should be directed to the Company at privacycoordinator@mercer.com or by contacting the Company at:
+Mercer Health & Benefits LLC
+1166 Avenue of Americas,
+New York, New York 10036
+USA
+  California Resident Privacy Notice
+Effective: July 1, 2021
+Scope of this Privacy Notice
+Mercer (“We”) strive to protect the privacy and confidentiality of the personal information with which we are entrusted.  This California Resident Privacy Notice explains the personal information we collect or process about California residents in connection with the site, application, product, or service that links to this Privacy Notice (the “Service”), how we use, share, and protect that personal information, and what your rights are with respect to your personal information that we gather and process.
+In this California Resident Privacy Notice, "personal information" has the same meaning as under the California Consumer Protection Act (“CCPA”): information that identifies, relates to, describes, is reasonably capable of being associated with, or could reasonably be linked, directly or indirectly, with a particular consumer or household, Personal information does not include information that has been de-identified or aggregated.
+Please also note that in certain cases, we may collect your personal information for the Service pursuant to a contract we have with a commercial client (our “Client”).  In such circumstances, we may be acting as a “service provider” and are obligated to process the personal information we collect or are provided in connection with the Service in accordance with instructions from or the contract with our Client, which is the business ultimately responsible for determining how your personal information will be handled.  Accordingly, if you are using the Service in connection with your role as an employee of our Client, or by virtue of some other relationship with, our Client, we encourage you to review that Client’s privacy notice to understand the full scope of how your personal information will be handled.  Further, in any case where we are acting as a service provider to a Client, if you or your authorized agent (together referred to hereinafter, where applicable, as “you”) wish to exercise any rights that may be available to you under certain data privacy laws (for example, the right to access or deletion under the California Consumer Privacy Act if you are a resident of California as described below), you should direct your request to our Client, who is the party responsible for receiving, assessing, and responding to your requests, as we do not have any obligation, and, notwithstanding anything in this Privacy Notice to the contrary, may elect not, to respond to your requests.  If you are not certain whether we are acting as a service provider to a Client in your particular circumstance, please contact us through one of the methods described at the end of this Privacy Notice. 
+What Personal Information Do We Collect and Share, and For What Purpose?
+In the past 12 months, we have collected and shared the following types of personal information from users of the Service:
+Categories of PI
+Examples/Description 
+Categories of Sources of PI
+Business or Commercial Purpose for Collection of PI
+Categories of third parties with whom we share the PI
+Other Unique Identifiers
+· Indigo account name/number
+· Created by Mercer for your Indigo account from information you supply
+· Your employer, plan sponsor or their administrator        
+· Quotation/Inception of service
+· Providing and identifying  service(s) to you
+· Marketing analytics and direct marketing
+· Communicate with you and service providers you select
+· Client/Employer
+· Vendor/service providers
+Contact Information
+· Honorifics 
+· Company or school name 
+· Title 
+· Alias
+· Mailing address 
+· Email address
+· Telephone and fax numbers
+· Contact information for related individuals (household or job)
+· Directly from you
+· Your employer, plan sponsor or their administrator
+· Quotation/Inception of service
+· Providing the service(s) to the client
+· Marketing analytics and direct marketing
+· Communicate with you and service providers you select
+· Client/Employer   
+· Vendor/service providers
+Individual Attributes
+· Marital status
+· Gender
+· Age
+· Beneficiaries/Dependents
+· Directly from you
+· Your employer, plan sponsor or their administrator
+· Quotation/Inception of service
+· Providing the service(s) to you
+· Marketing analytics and direct marketing
+· Communicate with you and service providers you select
+· Client/Employer
+· Vendor/service providers  
+Financial Information
+· Financial and payment account information 
+· Directly from you (or from a current or former plan member who named you as a beneficiary)
+· Your employer, plan sponsor or their administrator
+· Quotation/Inception of service
+· Providing the service(s) to you
+· Marketing analytics and direct marketing
+· Communicate with you and service providers you select
+· Client/Employer
+· Vendor/service providers
+Health Information
+· Smoker / Non-smoker status
+· Directly from you 
+· Quotation/Inception of service
+· Providing the service(s) to you
+· Marketing analytics and direct marketing
+· Communicate with you and service providers you select
+· Vendor/service providers
+Professional or Employment-related records
+· Occupation
+· Directly from you         
+· Quotation/Inception of service
+· Providing the service(s) to you
+· Marketing analytics and direct marketing
+· Communicate with you and your service providers
+· Vendor/service providers
+Audio, video, or visual information
+· Call center recordings
+· Directly from you 
+· Quotation/Inception of service
+· Providing the service(s) to you
+· Communicate with you and the service providers you select
+· Client/Employer
+· Vendor/service providers
+  We may also use or share de-identified information that is not reasonably likely to identify you for commercially legitimate business purposes.
+We do not sell personal information to any third parties, and have not done so in the preceding 12 months.
+Your Rights as a California Resident
+Under California law, some California residents have specific rights regarding their personal information.  These rights are subject to certain exceptions as described below.  Further, if we have collected or processed your personal information in connection with a product or service we are providing to our Client that is a company, partnership, sole proprietorship, nonprofit or government agency, and you are an employee, owner, director, officer, or contractor of that entity, rights 1-3 below are not available to you until at least January 1, 2021.
+When required, we will respond to most requests within 45 days, unless it is reasonably necessary for us to extend our response time.
+1.-Right to Disclosure of Information
+You have the right to request that we disclose certain information regarding our practices with respect to personal information. If you submit a valid and verifiable request and we confirm your identity and/or authority to make the request, we will disclose to you any of the following at your direction:
+The categories of personal information we have collected about you in the last 12 months.
+The categories of sources for the personal information we have collected about you in the last 12 months.
+Our business or commercial purpose for collecting that personal information.
+The categories of third parties with whom we share that personal information.
+The specific pieces of personal information we collected about you.
+If we sold your personal information for a business purpose, a list of the personal information types that each category of recipient purchased.
+If we disclosed your personal information to a third party for a business purpose, a list of the personal information types that each category of recipient received.
+2.-Right to Delete Personal Information
+You have the right to request that we delete any of your personal information that we collected from you and retained, subject to certain exceptions.  If you submit a valid and verifiable request and we can confirm your identity and/or authority to make the request, we will determine if retaining the information is necessary for us or our service providers to:
+Complete a transaction for which we collected the personal information, provide a good or service that you requested, take actions reasonably anticipated within the context of our ongoing business relationship with you, or otherwise perform our contract with you
+Detect security incidents, protect against malicious, deceptive, fraudulent, or illegal activity, or prosecute those responsible for such activities;
+Debug products to identify and repair errors that impair existing intended functionality.
+Exercise free speech, ensure the right of another consumer to exercise their free speech rights, or exercise another right provided for by law;
+Comply with the California Electronic Communications Privacy Act (Cal. Penal Code § 1546 seq.);
+Engage in public or peer-reviewed scientific, historical, or statistical research in the public interest that adheres to all other applicable ethics and privacy laws, when the information's deletion may likely render impossible or seriously impair the research's achievement, if you previously provided informed consent;
+Enable solely internal uses that are reasonably aligned with consumer expectations based on your relationship with us;
+Comply with a legal obligation; and/or
+Make other internal and lawful uses of that information that are compatible with the context in which you provided it.
+If none of the above retention conditions apply, we will delete your personal information from our records and direct our service providers to do the same.
+How to exercise the above rights
+To exercise your rights to disclosure or deletion described above, please click on the link here to submit an individual rights request.
+Alternatively, you may call us at 855-518-4620.  
+*Please note that, as described above, in certain cases we may collect your personal information as a service provider pursuant to a contract we have with a commercial Client to provide the Service.  In any case where we are acting as a service provider to a Client, you should direct your requests to exercise your rights available under data privacy laws to our Client, who is the party responsible for receiving, assessing, and responding to your requests.  As a service provider, we do not have any obligation, and, notwithstanding anything in this Privacy Notice to the contrary, may elect not, to respond to your requests.
+Only you or a person legally authorized to act on your behalf may make a verifiable consumer request related to your personal information.
+You may make a verifiable consumer request for access or deletion no more than twice within a 12-month period. The verifiable request must:
+Provide sufficient information that allows us to reasonably verify you are the person about whom we collected personal information or an authorized representative.  Depending on the nature of your request and the sensitivity of the information we hold about you, we may ask you to confirm various data elements we already have on file such as your mailing address and phone number, or, in case of sensitive personal information, we may require you to submit a copy of a government issued identification.
+and
+Describe your request with sufficient detail that allows us to properly understand, evaluate, and respond to it.
+You will not be required to create an account with us in order to submit a verifiable request, though we may communicate with you about your request via a pre-established account if applicable.  However, in order to safeguard the personal information in our possession, if we cannot verify your identity or authority to act on another’s behalf, we will be unable to comply with your request.  We will only use personal information you provide when submitting a verifiable request to confirm your identity or authority, or to fulfill your request.
+3.-Right to Opt out of Sales of Your Personal Information
+As a California resident, you have the right to direct a business that sells your personal information to third parties not to sell your personal information.  This right is referred to as “the right to opt-out.” 
+Because we do not sell your personal information, we do not provide any mechanism for you to exercise the right to opt out.
+4.-Right to Non-Discrimination
+You may exercise your rights under the CCPA without discrimination.  For example, unless the CCPA provides an exception, we will not:
+Deny you goods or services;
+Charge you different prices or rates for goods or services, including through granting discounts or other benefits, or imposing penalties;
+Provide you a different level or quality of goods or services; or
+Suggest that you may receive a different price or rate for goods or services or a different level or quality of goods or services.
+We may offer you financial incentives to provide us with personal information that is reasonably related to the information’s value.  This could result in different prices, rates, or quality levels for our products or services.  Any financial incentive we offer will be described in written terms that explain the material aspects of the financial incentive program.  You must opt-in to any financial incentive program and may revoke your consent at any time by contacting us as indicated below.
+5.-Direct Marketing and Do Not Track Signals
+Under California’s “Shine the Light” law, California residents may request and obtain a notice once a year about the personal information we shared with other businesses for their own direct marketing purposes.  Such a notice will include a list of the categories of personal information that were shared (if any) and the names and addresses of all third parties with which the personal information was shared (if any).  The notice will cover the preceding calendar year.  To obtain such a notice, please contact us as described below.  In addition, under this law you are entitled to be advised how we handle “Do Not Track” browser signals.  Because there currently is not an industry or legal standard for recognizing or honoring DNT signals, we do not honor Do Not Track requests at this time.
+Minors
+We do not knowingly collect personal information from children under 13.  If we learn that we have collected any personal information from a child under the age of 13 without verifiable parental consent, we will delete that information from our files as quickly as possible.  If you believe that we may have collected information from a child under 13, please contact us at the email address provided below.
+We never sell the personal information of minors under 16 years of age, and would not do so in the future without affirmative authorization of the consumer if between 13 to 16 years of age, or the parent or guardian of a consumer less than 13 years of age.
+How Long Do We Keep Your Information?
+We will retain your personal information for as long as is necessary for the processing purpose(s) for which it was collected and other permitted purpose(s), including  retention of personal information pursuant to any applicable contract, law or regulation.  Our retention periods vary based on business, legal and regulatory needs.
+What Steps Do We Take to Protect Your Information?
+This site and all information submitted by or on behalf of you through this site may be collected, stored, and processed in countries other than the one in which you reside, including, but not limited to, the United States.
+
+We restrict access to your personal information to only those employees of ours, our affiliates, and third- party service providers who reasonably need it to provide products and/or services. We have implemented physical, administrative, and technical safeguards to protect your personal information from unauthorized access. However, as effective as our security measures are, no security system is impenetrable. We cannot guarantee the security of these systems, nor can we guarantee that information supplied by you or on your behalf cannot be intercepted while being transmitted over the Internet.
+Links to Third Party Sites
+Our website may contain links to other third party websites.  If you follow a link to any of those third party websites, please note that they have their own privacy policies and that we do not accept any responsibility or liability for their policies or processing of your personal information.  Please check those third party privacy policies before you submit any personal information to such third party websites. 
+Changes to this Privacy Notice
+The Privacy Notice is subject to change at any time.  If we make changes to this Privacy Notice, we will update the “Effective date” at the top of this page.  Any changes we make to this Privacy Notice become effective immediately, so you should review this Privacy Notice regularly for changes.  Your continued use of the Service after the posting of the updated Privacy Notice constitutes your acceptance of the updated terms.
+Questions, Requests or Complaints
+To submit general questions or requests regarding this Privacy Notice or our privacy practices, please contact us at privacycoordinator@mercer.com or alternatively, you may call us at 855-518-4620.
