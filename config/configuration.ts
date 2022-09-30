@@ -14,9 +14,9 @@ const browserArguments = [
   // '--slow-down-compositing-scale-factor=500',
 ];
 
-if (LaunchHeadlessMode) {
-  browserArguments.push('--headless');
-}
+// if (LaunchHeadlessMode) {
+//   browserArguments.push('--headless');
+// }
 
 // Docs: https://webdriver.io/docs/options | https://webdriver.io/docs/configurationfile/
 export const config: Testrunner = {

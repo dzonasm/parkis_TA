@@ -3,7 +3,7 @@ const yargs = require('yargs').argv;
 export const LaunchHeadlessMode = true; // If `false`, a browser will auto open (useful to monitor visually instead of through terminal)
 
 export const Specifications = [
-  './src/features/*.feature',
+  './src/features/homeRenters.feature',
 // example to push spec with data -   './src/features/home/' + yargs.client + '_home.feature',
 ];
 
@@ -43,4 +43,5 @@ export const ContextPages = {
   howItWorks: ['howItWorks'],
   PrivacyPolicy: ['privacyPolicy'],
   termsOfUse: ['termsOfUse'],
+  homeRenters: ['homeRenters'],
 };
