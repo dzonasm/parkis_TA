@@ -33,4 +33,5 @@ export default {
     privacyPolicy: 'privacy-policy',
     termsOfUse: 'terms-of-use',
   },
+  login: 'login',
 };
